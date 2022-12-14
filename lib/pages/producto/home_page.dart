@@ -95,13 +95,13 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(
                   width: 100,
                 ),
-                // IconButton(
-                //   onPressed: () {},
-                //   icon: const Icon(
-                //     Ionicons.search_sharp,
-                //     size: 30,
-                //   ),
-                // ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Ionicons.search_sharp,
+                    size: 30,
+                  ),
+                ),
               ],
             ),
           ),

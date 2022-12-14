@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:sqflite_flutter/pages/menu_second_page.dart';
 import 'package:sqflite_flutter/pages/menu_primary_page.dart';
+import 'package:sqflite_flutter/pages/producto/review_page.dart';
 import 'package:sqflite_flutter/theme.dart';
 
 class DetailPage extends StatelessWidget {
@@ -21,10 +22,10 @@ class DetailPage extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(top: 350),
                       padding: const EdgeInsets.only(
-                          left: 30, right: 30, bottom: 190),
+                          left: 30, right: 30, bottom: 115),
                       height: 600,
                       width: double.infinity,
-                      color: Colors.black87,
+                      color: Colors.cyan,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,7 +34,7 @@ class DetailPage extends StatelessWidget {
                             'Descripción:',
                             style: GoogleFonts.playfairDisplay(
                               fontWeight: FontWeight.w900,
-                              color: Colors.white,
+                              color: Colors.black,
                               letterSpacing: 1,
                             ),
                           ),
@@ -43,11 +44,60 @@ class DetailPage extends StatelessWidget {
                           Text(
                             'Ica es una ciudad del centro sur del Perú, capital del departamento de Ica, situada en el estrecho valle que forma el río Ica, entre el Gran Tablazo de Ica y las laderas occidentales de la cordillera de los Andes.',
                             style: GoogleFonts.playfairDisplay(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontWeight: FontWeight.w900,
                               letterSpacing: 1,
                             ),
                             textAlign: TextAlign.justify,
+                          ),
+                          const SizedBox(
+                            height: 30,
+                          ),
+                          MaterialButton(
+                            minWidth: 180,
+                            height: 65,
+                            color: Colors.green,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const ReviewPage(),
+                                ),
+                              );
+                            },
+                            child: Row(
+                              children: [
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset(
+                                  'assets/cms.png',
+                                  scale: 7,
+                                ),
+                                const SizedBox(
+                                  width: 15,
+                                ),
+                                Text(
+                                  'Comentarios',
+                                  style: GoogleFonts.playfairDisplay(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 15,
+                                ),
+                                const Icon(
+                                  Ionicons.arrow_forward_circle_outline,
+                                  color: Colors.black,
+                                  size: 30,
+                                )
+                              ],
+                            ),
                           ),
                         ],
                       ),
@@ -59,7 +109,7 @@ class DetailPage extends StatelessWidget {
                       height: 500,
                       width: double.infinity,
                       decoration: const BoxDecoration(
-                        color: Colors.black54,
+                        color: Colors.cyanAccent,
                         borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(40),
                             bottomRight: Radius.circular(40)),
@@ -71,11 +121,10 @@ class DetailPage extends StatelessWidget {
                           Text(
                             'Ica, Perú',
                             style: GoogleFonts.playfairDisplay(
-                                    color: Colors.white,
-                                    fontSize: 25,
-                                    fontWeight: FontWeight.w900,
-                                    letterSpacing: 1)
-                                .copyWith(color: mainCOlor),
+                                color: Colors.black,
+                                fontSize: 25,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: 1),
                           ),
                           const SizedBox(
                             height: 30,
@@ -89,7 +138,7 @@ class DetailPage extends StatelessWidget {
                                     height: 40,
                                     width: 40,
                                     decoration: const BoxDecoration(
-                                        color: Colors.white,
+                                        color: Colors.red,
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(12))),
                                     child: Center(
@@ -110,7 +159,7 @@ class DetailPage extends StatelessWidget {
                                     child: Text(
                                       '4.92',
                                       style: GoogleFonts.playfairDisplay(
-                                          color: Colors.white,
+                                          color: Colors.black,
                                           fontSize: 15,
                                           fontWeight: FontWeight.w900,
                                           letterSpacing: 1),
@@ -124,7 +173,7 @@ class DetailPage extends StatelessWidget {
                                     height: 40,
                                     width: 40,
                                     decoration: const BoxDecoration(
-                                        color: Colors.white,
+                                        color: Colors.red,
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(12))),
                                     child: Center(
@@ -145,7 +194,7 @@ class DetailPage extends StatelessWidget {
                                     child: Text(
                                       '27°C',
                                       style: GoogleFonts.playfairDisplay(
-                                          color: Colors.white,
+                                          color: Colors.black,
                                           fontSize: 15,
                                           fontWeight: FontWeight.w900,
                                           letterSpacing: 1),
@@ -159,7 +208,7 @@ class DetailPage extends StatelessWidget {
                                     height: 40,
                                     width: 40,
                                     decoration: const BoxDecoration(
-                                        color: Colors.white,
+                                        color: Colors.red,
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(12))),
                                     child: Center(
@@ -180,7 +229,7 @@ class DetailPage extends StatelessWidget {
                                     child: Text(
                                       '9 Jun',
                                       style: GoogleFonts.playfairDisplay(
-                                          color: Colors.white,
+                                          color: Colors.black,
                                           fontSize: 15,
                                           fontWeight: FontWeight.w900,
                                           letterSpacing: 1),
@@ -234,7 +283,7 @@ class DetailPage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
               height: 80,
               width: double.infinity,
-              color: Colors.black,
+              color: Colors.tealAccent,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -248,16 +297,15 @@ class DetailPage extends StatelessWidget {
                             fontSize: 15,
                             fontWeight: FontWeight.w900,
                             letterSpacing: 1,
-                            color: Colors.white),
+                            color: Colors.black),
                       ),
                       Text(
                         '500 - 750',
                         style: GoogleFonts.playfairDisplay(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w900,
-                                letterSpacing: 1,
-                                color: Colors.amber)
-                            .copyWith(color: mainCOlor),
+                            fontSize: 15,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 1,
+                            color: Colors.black),
                       ),
                     ],
                   ),
@@ -272,7 +320,7 @@ class DetailPage extends StatelessWidget {
                       child: MaterialButton(
                         minWidth: 180,
                         height: 65,
-                        color: Colors.amber,
+                        color: Colors.red,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6),
                         ),
@@ -287,7 +335,7 @@ class DetailPage extends StatelessWidget {
                         child: Text(
                           'Reservar Ahora',
                           style: GoogleFonts.playfairDisplay(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontSize: 13.5,
                             fontWeight: FontWeight.bold,
                           ),

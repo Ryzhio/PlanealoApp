@@ -22,15 +22,31 @@ class BienvenidaPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
           child: Column(
             children: [
-              Text(
-                'Planéalo',
-                style: GoogleFonts.allison(
-                    color: Colors.white,
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5),
+              const SizedBox(
+                height: 10,
               ),
-              const SizedBox(height: 100),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.transparent,
+                    child: Image.asset(
+                      'assets/papp1.png',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Text(
+                    'Planéalo',
+                    style: GoogleFonts.allison(
+                        color: Colors.white,
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1.5),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 80),
               Text(
                 'Conoce tu PRÓXIMO lugar de VIAJE',
                 style: GoogleFonts.playfairDisplay(

@@ -1,19 +1,49 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class ThemeProvider extends ChangeNotifier {
-  ThemeMode themeMode = ThemeMode.dark;
+class TemaProvider extends GetxController {
+  late SharedPreferences preferences;
 
-  bool get isDarkMode => themeMode == ThemeMode.dark;
-}
+  String prefkey = "isDarkModeKey";
 
-class MyThemes {
-  static final darkTheme = ThemeData(
-    scaffoldBackgroundColor: Colors.grey.shade900,
-    colorScheme: const ColorScheme.dark(),
-  );
+  void temaClaro() {
+    Get.changeTheme(ThemeData.light());
+    preferences.setBool(prefkey, false);
+  }
 
-  static final lightTheme = ThemeData(
-    scaffoldBackgroundColor: Colors.white,
-    colorScheme: const ColorScheme.light(),
-  );
+  void temaOscuro() {
+    Get.changeTheme(ThemeData.dark());
+    preferences.setBool(prefkey, true);
+  }
+
+  void temaPersonalizado() {
+    Get.changeTheme(ThemeData(
+        buttonColor: Colors.orange,
+        primaryColor: Colors.red,
+        appBarTheme: const AppBarTheme(color: Colors.red)));
+  }
+
+  @override
+  void onInit() {
+    cargarPreferencias().then((value) => cargarTema());
+
+    super.onInit();
+  }
+
+  void cargarTema() {
+    bool? isDarkMode = preferences.getBool(prefkey);
+
+    if (isDarkMode == null) {
+      preferences.setBool(prefkey, false);
+      isDarkMode = false;
+    }
+
+    (isDarkMode) ? temaOscuro() : temaClaro();
+  }
+
+  Future<void> cargarPreferencias() async {
+    preferences = await Get.putAsync<SharedPreferences>(
+        () async => await SharedPreferences.getInstance());
+  }
 }

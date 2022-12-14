@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:sqflite_flutter/pages/producto/config_pages.dart';
 import 'package:sqflite_flutter/pages/producto/home_page.dart';
 import 'package:sqflite_flutter/pages/producto/productos_page.dart';
 
@@ -18,7 +19,7 @@ class _MenuPrimaryPageState extends State<MenuPrimaryPage> {
     const HomePage(),
     const ProductosPage(),
     const Center(child: Text('Search Screen', style: TextStyle(fontSize: 45))),
-    const Center(child: Text('Profile Screen', style: TextStyle(fontSize: 45))),
+    const InicioPage(),
   ];
   final colors = [
     Colors.red,
