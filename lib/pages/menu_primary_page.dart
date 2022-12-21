@@ -3,6 +3,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:sqflite_flutter/pages/producto/config_pages.dart';
 import 'package:sqflite_flutter/pages/producto/home_page.dart';
+import 'package:sqflite_flutter/pages/producto/principal_page.dart';
 import 'package:sqflite_flutter/pages/producto/productos_page.dart';
 
 class MenuPrimaryPage extends StatefulWidget {
@@ -16,7 +17,7 @@ class _MenuPrimaryPageState extends State<MenuPrimaryPage> {
   int _currentIndex = 0;
 
   final screens = [
-    const HomePage(),
+    const PrincipalPage(),
     const ProductosPage(),
     const Center(child: Text('Search Screen', style: TextStyle(fontSize: 45))),
     const InicioPage(),

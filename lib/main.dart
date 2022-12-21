@@ -37,11 +37,10 @@ class MyApp extends StatelessWidget {
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'PlanéaloApp',
-
-        // ThemeData(
-        //   useMaterial3: true,
-        //   primarySwatch: Colors.blue,
-        // ),
+        theme: ThemeData(
+          useMaterial3: true,
+          primarySwatch: Colors.orange,
+        ),
         initialRoute: 'menu_page',
         routes: {
           'menu_page': (_) => const BienvenidaPage(),

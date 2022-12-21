@@ -30,14 +30,15 @@ class BienvenidaPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   CircleAvatar(
+                    maxRadius: 29,
                     backgroundColor: Colors.transparent,
                     child: Image.asset(
-                      'assets/papp1.png',
+                      'assets/paa.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                   Text(
-                    'Planéalo',
+                    'lanéalo',
                     style: GoogleFonts.allison(
                         color: Colors.white,
                         fontSize: 35,

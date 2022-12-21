@@ -1,3 +1,5 @@
+import 'package:google_fonts/google_fonts.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:sqflite_flutter/models/lugar_model.dart';
 import 'package:sqflite_flutter/services/lugar_service.dart';
 import 'package:sqflite_flutter/widgets/card_widget.dart';
@@ -18,8 +20,16 @@ class ReviewPage extends StatelessWidget {
     }
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Lugares'),
+        backgroundColor: Colors.red,
         centerTitle: true,
+        title: Text(
+          'COMENTARIOS',
+          style: GoogleFonts.playfairDisplay(
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1,
+          ),
+        ),
       ),
       body: ListView.builder(
         itemCount: lugarService.lugares.length,
@@ -32,17 +42,59 @@ class ReviewPage extends StatelessWidget {
 
               Navigator.pushNamed(context, 'lugar_page');
             },
-            title: Text(dato.nombre),
-            subtitle: Text(dato.descripcion),
+            title: Row(
+              children: [
+                const SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  dato.nombre,
+                  style: GoogleFonts.playfairDisplay(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1,
+                  ),
+                ),
+                const SizedBox(
+                  width: 18,
+                ),
+                Row(
+                  children: [
+                    Container(
+                      height: 35,
+                      width: 35,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: AssetImage('assets/p2.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            subtitle: Padding(
+              padding: const EdgeInsets.only(left: 5, right: 5, top: 10),
+              child: Text(
+                dato.descripcion,
+                style: GoogleFonts.playfairDisplay(
+                  fontWeight: FontWeight.w900,
+                ),
+                textAlign: TextAlign.justify,
+              ),
+            ),
           );
         },
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.red,
         onPressed: () {
           lugarService.seleccionarLugar = Lugar(descripcion: '', nombre: '');
           Navigator.pushNamed(context, 'lugar_page');
         },
-        child: const Icon(Icons.add),
+        child: const Icon(Ionicons.add),
       ),
     );
   }

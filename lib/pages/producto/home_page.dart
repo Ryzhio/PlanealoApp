@@ -98,8 +98,8 @@ class _HomePageState extends State<HomePage> {
                 IconButton(
                   onPressed: () {},
                   icon: const Icon(
-                    Ionicons.search_sharp,
-                    size: 30,
+                    Ionicons.compass_outline,
+                    size: 40,
                   ),
                 ),
               ],
