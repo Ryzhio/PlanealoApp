@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:sqflite_flutter/pages/producto/bienvenida_page.dart';
 import 'package:sqflite_flutter/pages/producto/lugar_page.dart';
 import 'package:sqflite_flutter/providers/producto_provider.dart';
-import 'package:sqflite_flutter/providers/theme_provider.dart';
 import 'package:sqflite_flutter/services/lugar_service.dart';
 
 void main() {

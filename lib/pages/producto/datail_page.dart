@@ -263,12 +263,7 @@ class DetailPage extends StatelessWidget {
               // color: mainCOlor,
               child: IconButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const MenuPrimaryPage(),
-                    ),
-                  );
+                  Navigator.pop(context);
                 },
                 icon: const Icon(
                   Ionicons.arrow_back,
