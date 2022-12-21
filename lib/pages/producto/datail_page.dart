@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:sqflite_flutter/pages/menu_second_page.dart';
 import 'package:sqflite_flutter/pages/menu_primary_page.dart';
-import 'package:sqflite_flutter/pages/producto/review_page.dart';
+import 'package:sqflite_flutter/pages/comentspage/review_page.dart';
 import 'package:sqflite_flutter/theme.dart';
 
 class DetailPage extends StatelessWidget {
@@ -260,7 +260,6 @@ class DetailPage extends StatelessWidget {
           SafeArea(
             child: Container(
               margin: const EdgeInsets.only(top: 10, left: 10),
-              // color: mainCOlor,
               child: IconButton(
                 onPressed: () {
                   Navigator.pop(context);

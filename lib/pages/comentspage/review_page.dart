@@ -85,6 +85,15 @@ class ReviewPage extends StatelessWidget {
                 textAlign: TextAlign.justify,
               ),
             ),
+            trailing: IconButton(
+                onPressed: () {
+                  lugarService.borrarLugar(dato);
+                },
+                icon: Icon(
+                  Ionicons.trash,
+                  color: Colors.indigo,
+                  size: 30,
+                )),
           );
         },
       ),

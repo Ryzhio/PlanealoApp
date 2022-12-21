@@ -37,7 +37,7 @@ class LugaresService extends ChangeNotifier {
     return lugares;
   }
 
-  //VALIDAR
+  //VALIDAR SI REQUIERE CREAR O ACTUALIZAR
   Future crearOactualizar(Lugar lugar) async {
     isSaving = true;
     notifyListeners();
@@ -60,6 +60,7 @@ class LugaresService extends ChangeNotifier {
     print(decodedData);
     final index = lugares.indexWhere((element) => element.id == lugar.id);
     lugares[index] = lugar;
+    notifyListeners();
     return lugar.id;
   }
 
@@ -69,8 +70,8 @@ class LugaresService extends ChangeNotifier {
     final response = await http.post(url, body: lugar.toJson());
     final decodedData = json.decode(response.body);
     lugar.id = decodedData['name'];
-
     lugares.add(lugar);
+    notifyListeners();
     return lugar.id!;
   }
 
@@ -78,6 +79,12 @@ class LugaresService extends ChangeNotifier {
   Future<String> borrarLugar(Lugar lugar) async {
     final url = Uri.parse('$baseUrl/lugar/${lugar.id}.json');
     final response = await http.delete(url);
+    final decodeData = response.body;
+    final index = lugares.indexWhere((element) => element.id == lugar.id);
+    lugares[index] = lugar;
+    lugares.remove(lugares[index]);
+    notifyListeners();
+    print(decodeData);
     return lugar.id!;
   }
 }

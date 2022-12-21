@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:sqflite_flutter/models/placepri_model.dart';
 import 'package:sqflite_flutter/pages/detailscreen/detail_screen.dart';
-import 'package:sqflite_flutter/pages/producto/datail_page.dart';
 import 'package:sqflite_flutter/widgets/category_card.dart';
 import 'package:sqflite_flutter/widgets/recommended_card.dart';
 
@@ -190,9 +189,9 @@ class _PrincipalPageState extends State<PrincipalPage> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => const DetailPage(
-                                        // placeInfo: placesp[index],
-                                        ),
+                                    builder: (context) => DetailScreen(
+                                      placeInfo: placesp[index],
+                                    ),
                                   ),
                                 );
                               },

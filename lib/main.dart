@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
-import 'package:sqflite_flutter/pages/producto/bienvenida_page.dart';
+import 'package:sqflite_flutter/pages/welcomepage/bienvenida_page.dart';
 import 'package:sqflite_flutter/pages/producto/lugar_page.dart';
 import 'package:sqflite_flutter/providers/producto_provider.dart';
 import 'package:sqflite_flutter/services/lugar_service.dart';

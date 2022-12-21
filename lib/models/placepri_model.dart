@@ -20,7 +20,7 @@ List placesp = [
     distance: 50000,
     days: 12,
     desc:
-        'Máncora es un balneario y localidad peruana capital del distrito homónimo ubicado en la provincia de Talara, en el departamento de Piura.',
+        '¿Por qué visitar Máncora? El Pacífico besa al Perú en toda su costa. Pero en Máncora, en el norte del país, la delicadeza de las olas y la agradable temperatura durante todo el año, han convertido la zona en el balneario más privilegiado del país. Una larga línea, de aproximadamente 70 kilómetros, concentra varias playas de gran belleza, entre Punta Sal y la pequeña ciudad de Talara, capital petrolera del país. Las instalaciones hoteleras, pequeñas e íntimas, ofrecen todos los servicios. Y aquí, el plato peruano más internacional, el ceviche, alcanza niveles de gloria por la frescura del pescado y el sol brillante que se disfruta junto a una cerveza helada. La suma de todas estos factores logra la razón principal por la que hay que visitar Máncora, al menos una vez en la vida.  Aunque Máncora propiamente es una playa de 1,47 kilómetros, es el mejor sitio para recorrer, hacia el norte y el sur, lo que son, sin duda alguna, las playas más hermosas y cálidas del país.  Además, en el pueblo hay atractivos restaurantes de todo tipo de gastronomía y nivel, así como sitios nocturnos, y todo tipo de servicios bancarios, de salud, y comerciales. Reconocida por su belleza a nivel mundial, Máncora atrae miles de turistas al año, y es el sitio de moda de veraneo de la sociedad limeña, cuando escapa de los cambios de estaciones en la capital y el sur del país.',
   ),
   PlaceInfo(
     image: 'assets/city2.jpg',
