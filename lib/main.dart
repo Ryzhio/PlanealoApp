@@ -4,7 +4,9 @@ import 'package:provider/provider.dart';
 import 'package:sqflite_flutter/pages/welcomepage/bienvenida_page.dart';
 import 'package:sqflite_flutter/pages/producto/lugar_page.dart';
 import 'package:sqflite_flutter/providers/login_provider.dart';
+import 'package:sqflite_flutter/providers/off_sesion.dart';
 import 'package:sqflite_flutter/providers/producto_provider.dart';
+import 'package:sqflite_flutter/providers/storage_provider.dart';
 import 'package:sqflite_flutter/routes/route.dart';
 import 'package:sqflite_flutter/services/index.dart';
 import 'package:sqflite_flutter/services/lugar_service.dart';
@@ -24,6 +26,9 @@ class ProviderStateWidget extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
+          create: (_) => LauncherProvider(),
+        ),
+        ChangeNotifierProvider(
           create: (_) => LoginProvider(),
         ),
         ChangeNotifierProvider(
@@ -31,6 +36,9 @@ class ProviderStateWidget extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (_) => AuthService(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => StorageImageProvider(),
         ),
       ],
       child: const MyApp(),

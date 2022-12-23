@@ -29,7 +29,8 @@ class LugarFormPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Lugares'),
+        title: const Text('Tu Comentario nos Ayuda'),
+        centerTitle: true,
       ),
       body: Form(
         key: lugarForm.formkey,
@@ -39,7 +40,7 @@ class LugarFormPage extends StatelessWidget {
             children: [
               CustomTextFormField(
                 initialValue: dato.nombre,
-                hintText: 'Nombre',
+                hintText: 'Usuario',
                 onChanged: (value) => dato.nombre = value,
               ),
               const SizedBox(
@@ -48,7 +49,7 @@ class LugarFormPage extends StatelessWidget {
               CustomTextFormField(
                 maxLines: 5,
                 initialValue: dato.descripcion,
-                hintText: 'Descripcion',
+                hintText: 'Comenta Viajero',
                 onChanged: (value) => dato.descripcion = value,
               ),
             ],

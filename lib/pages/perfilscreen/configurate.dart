@@ -1,7 +1,9 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:sqflite_flutter/models/users.dart';
+import 'package:sqflite_flutter/providers/storage_provider.dart';
 import 'package:sqflite_flutter/widgets/textformfield_widget.dart';
 
 class ConfigPage extends StatefulWidget {
@@ -15,7 +17,24 @@ class ConfigPage extends StatefulWidget {
 class _ConfigPageState extends State<ConfigPage> {
   @override
   Widget build(BuildContext context) {
+    final storageProvider = Provider.of<StorageImageProvider>(context);
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Editar Perfil'),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        actions: [
+          IconButton(
+            onPressed: () {
+              storageProvider.activeCleanImage();
+            },
+            icon: const Icon(
+              Icons.delete,
+              color: Colors.red,
+            ),
+          ),
+        ],
+      ),
       // appBar: AppBar(
       //   title: Text('Editar Perfil'),
       //   centerTitle: true,
@@ -26,24 +45,39 @@ class _ConfigPageState extends State<ConfigPage> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Row(
-                  children: [
-                    IconButton(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        icon: Icon(Icons.arrow_back)),
-                  ],
-                ),
                 Stack(children: [
                   Container(
                     padding: EdgeInsets.all(4),
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(color: Colors.blue, width: 3)),
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage(widget.user.perfilA),
-                      radius: 60,
+                    child: InkWell(
+                      child: Container(
+                        height: 160,
+                        width: 160,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(80),
+                          color: Colors.amber,
+                        ),
+                        child: (storageProvider.image != null)
+                            ? ClipRRect(
+                                borderRadius: BorderRadius.circular(80),
+                                child: SizedBox.fromSize(
+                                  size: const Size.fromRadius(80),
+                                  child: Image.file(
+                                    storageProvider.image!,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              )
+                            : const Icon(
+                                Icons.photo,
+                                size: 100,
+                              ),
+                      ),
+                      onTap: () {
+                        storageProvider.activeGalleryImage();
+                      },
                     ),
                   ),
                   Positioned(
@@ -54,9 +88,11 @@ class _ConfigPageState extends State<ConfigPage> {
                           decoration: BoxDecoration(
                               shape: BoxShape.circle, color: Colors.blue),
                           child: IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                storageProvider.activeCamaraImage();
+                              },
                               icon: Icon(
-                                Icons.photo,
+                                Icons.camera_alt_outlined,
                                 color: Colors.white,
                               ))))
                 ]),
@@ -95,7 +131,7 @@ class _ConfigPageState extends State<ConfigPage> {
                     ),
                     SizedBox(
                         width: double.infinity,
-                        height: 64,
+                        height: 60,
                         child: CustomTextFormField(
                           hintText: 'Ingrese su nombre',
                           initialValue: 'Alexandra',
@@ -170,7 +206,9 @@ class _ConfigPageState extends State<ConfigPage> {
                   height: 12,
                 ),
                 MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    storageProvider.alertCustom(context);
+                  },
                   color: Colors.blue,
                   minWidth: 200,
                   height: 60,

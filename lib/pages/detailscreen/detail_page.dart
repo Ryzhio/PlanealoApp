@@ -5,16 +5,15 @@ import 'package:sqflite_flutter/models/placepri_model.dart';
 import 'package:sqflite_flutter/pages/menu_second_page.dart';
 import 'package:sqflite_flutter/pages/comentspage/review_page.dart';
 
-class DetailScreen extends StatefulWidget {
+class DetailPage extends StatefulWidget {
   final PlaceInfo placeInfo;
-  const DetailScreen({super.key, required this.placeInfo});
+  const DetailPage({super.key, required this.placeInfo});
 
   @override
-  State<DetailScreen> createState() => _DetailScreenState();
+  State<DetailPage> createState() => _DetailPageState();
 }
 
-class _DetailScreenState extends State<DetailScreen> {
-  // final launchcherProvider = Provider.of<LauncherProvider>(context);
+class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,42 +116,27 @@ class _DetailScreenState extends State<DetailScreen> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            // const SizedBox(
-                            //   height: 12,
-                            // ),
-                            // // Row(
-                            // //   children: [
-                            // //     Icon(
-                            // //       Ionicons.location,
-                            // //       color: Colors.orange[400],
-                            // //     ),
-                            // //     const SizedBox(
-                            // //       width: 12,
-                            // //     ),
-                            // //     Text(
-                            // //       widget.placeInfo.location,
-                            // //       style: const TextStyle(
-                            // //         color: Colors.blueGrey,
-                            // //         fontSize: 20,
-                            // //       ),
-                            // //     ),
-                            // //     Visibility(
-                            // //       visible: launchcherProvider.isVisible,
-                            // //       child: Padding(
-                            // //         padding: const EdgeInsets.all(8.0),
-                            // //         child: FloatingActionButton(
-                            // //           onPressed: () {
-                            // //             launchcherProvider.goMapLauncher();
-                            // //           },
-                            // //           backgroundColor: Colors.green,
-                            // //           child: const Icon(
-                            // //             Icons.email,
-                            // //           ),
-                            // //         ),
-                            // //       ),
-                            // //     ),
-                            // //   ],
-                            // // ),
+                            const SizedBox(
+                              height: 12,
+                            ),
+                            Row(
+                              children: [
+                                Icon(
+                                  Ionicons.location,
+                                  color: Colors.orange[400],
+                                ),
+                                const SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  widget.placeInfo.location,
+                                  style: const TextStyle(
+                                    color: Colors.blueGrey,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ],
+                            ),
                             const SizedBox(
                               height: 15,
                             ),

@@ -17,15 +17,15 @@ class _MenuPrimaryPageState extends State<MenuPrimaryPage> {
 
   final screens = [
     PrincipalPage(user: userd.first),
-    const Center(child: Text('Lista', style: TextStyle(fontSize: 45))),
-    const Center(child: Text('Buscador', style: TextStyle(fontSize: 45))),
+    // const Center(child: Text('Lista', style: TextStyle(fontSize: 45))),
+    // const Center(child: Text('Buscador', style: TextStyle(fontSize: 45))),
     const ProfileScreen(),
   ];
   final colors = [
     Colors.orange,
-    Colors.purple,
+    // Colors.purple,
     Colors.red,
-    Colors.green,
+    // Colors.green,
   ];
 
   @override
@@ -49,18 +49,18 @@ class _MenuPrimaryPageState extends State<MenuPrimaryPage> {
               iconActiveColor: Colors.white,
               textColor: Colors.white,
             ),
-            GButton(
-              icon: Ionicons.book_sharp,
-              text: '    Notas',
-              iconActiveColor: Colors.white,
-              textColor: Colors.white,
-            ),
-            GButton(
-              icon: Ionicons.search_sharp,
-              text: '    Search',
-              iconActiveColor: Colors.white,
-              textColor: Colors.white,
-            ),
+            // GButton(
+            //   icon: Ionicons.book_sharp,
+            //   text: '    Notas',
+            //   iconActiveColor: Colors.white,
+            //   textColor: Colors.white,
+            // ),
+            // GButton(
+            //   icon: Ionicons.search_sharp,
+            //   text: '    Search',
+            //   iconActiveColor: Colors.white,
+            //   textColor: Colors.white,
+            // ),
             GButton(
               icon: Ionicons.person_sharp,
               text: '    Perfil',

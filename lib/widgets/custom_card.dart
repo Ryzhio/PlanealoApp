@@ -120,7 +120,7 @@ class _CustomCardState extends State<CustomCard> {
                         ),
                       ),
                       Container(
-                        width: 70,
+                        width: 50,
                         height: 30,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,

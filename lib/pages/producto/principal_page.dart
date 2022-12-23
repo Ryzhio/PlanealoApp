@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:sqflite_flutter/models/placepri_model.dart';
 import 'package:sqflite_flutter/models/users.dart';
+import 'package:sqflite_flutter/pages/detailscreen/detail_page.dart';
 import 'package:sqflite_flutter/pages/detailscreen/detail_screen.dart';
 import 'package:sqflite_flutter/widgets/category_card.dart';
 import 'package:sqflite_flutter/widgets/recommended_card.dart';
@@ -132,22 +133,58 @@ class _PrincipalPageState extends State<PrincipalPage> {
                       Row(
                         children: [
                           CategoryCard(
-                            prees: () {},
+                            prees: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailPage(
+                                    placeInfo: placesp.first,
+                                  ),
+                                ),
+                              );
+                            },
                             image: 'assets/city5.jpg',
                             title: 'Arequipa',
                           ),
                           CategoryCard(
-                            prees: () {},
+                            prees: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailPage(
+                                    placeInfo: placesp.first,
+                                  ),
+                                ),
+                              );
+                            },
                             image: 'assets/city6.jpg',
                             title: 'Ica',
                           ),
                           CategoryCard(
-                            prees: () {},
+                            prees: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailPage(
+                                    placeInfo: placesp.first,
+                                  ),
+                                ),
+                              );
+                            },
                             image: 'assets/city1.jpg',
                             title: 'Piura',
                           ),
                           CategoryCard(
-                            prees: () {},
+                            prees: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailPage(
+                                    placeInfo: placesp.first,
+                                  ),
+                                ),
+                              );
+                            },
                             image: 'assets/city3.jpg',
                             title: 'Loreto',
                           ),

@@ -39,12 +39,15 @@ dependencies:
   google_fonts: ^3.0.1
   google_nav_bar: ^5.0.6
   http: ^0.13.5
+  image_picker: ^0.8.6
   ionicons: ^0.2.1
   lottie: ^2.1.0
   provider: ^6.0.4
   shared_preferences: ^2.0.15
   sqflite: ^2.2.2
+  supabase_flutter: ^1.2.2
   supercharged: ^2.1.1
+  url_launcher: ^6.1.7
 
 dev_dependencies:
   flutter_lints: ^2.0.0

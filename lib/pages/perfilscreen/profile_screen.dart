@@ -29,14 +29,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ],
         ),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   backgroundColor: const Color(0xff4245ff),
-      //   onPressed: () {},
-      //   child: const Icon(
-      //     Icons.add,
-      //     size: 34,
-      //   ),
-      // ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
