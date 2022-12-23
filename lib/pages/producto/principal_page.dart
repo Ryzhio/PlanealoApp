@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:sqflite_flutter/models/placepri_model.dart';
+import 'package:sqflite_flutter/models/users.dart';
 import 'package:sqflite_flutter/pages/detailscreen/detail_screen.dart';
 import 'package:sqflite_flutter/widgets/category_card.dart';
 import 'package:sqflite_flutter/widgets/recommended_card.dart';
 
 class PrincipalPage extends StatefulWidget {
-  const PrincipalPage({super.key});
+  final User user;
+  const PrincipalPage({super.key, required this.user});
 
   @override
   State<PrincipalPage> createState() => _PrincipalPageState();
@@ -26,24 +28,24 @@ class _PrincipalPageState extends State<PrincipalPage> {
                 //APP BAR
                 Row(
                   children: [
-                    const CircleAvatar(
+                    CircleAvatar(
                       radius: 27,
-                      backgroundImage: AssetImage('assets/p1.jpg'),
+                      backgroundImage: AssetImage(widget.user.perfilA),
                     ),
                     const SizedBox(
                       width: 15,
                     ),
                     RichText(
-                      text: const TextSpan(
-                        text: 'Hola',
-                        style: TextStyle(
+                      text: TextSpan(
+                        text: 'Hola, ',
+                        style: const TextStyle(
                           color: Colors.black,
                           fontSize: 18,
                         ),
                         children: [
                           TextSpan(
-                            text: ', Alexandra',
-                            style: TextStyle(
+                            text: widget.user.perfilN,
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 18,
                             ),

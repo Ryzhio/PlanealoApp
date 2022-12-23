@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:sqflite_flutter/pages/themesmode/config_pages.dart';
+import 'package:sqflite_flutter/models/users.dart';
+import 'package:sqflite_flutter/pages/perfilscreen/profile_screen.dart';
 import 'package:sqflite_flutter/pages/producto/principal_page.dart';
 
 class MenuPrimaryPage extends StatefulWidget {
@@ -15,15 +16,15 @@ class _MenuPrimaryPageState extends State<MenuPrimaryPage> {
   int _currentIndex = 0;
 
   final screens = [
-    const PrincipalPage(),
+    PrincipalPage(user: userd.first),
     const Center(child: Text('Lista', style: TextStyle(fontSize: 45))),
     const Center(child: Text('Buscador', style: TextStyle(fontSize: 45))),
-    const InicioPage(),
+    const ProfileScreen(),
   ];
   final colors = [
-    Colors.red,
+    Colors.orange,
     Colors.purple,
-    Colors.amber,
+    Colors.red,
     Colors.green,
   ];
 
@@ -44,25 +45,25 @@ class _MenuPrimaryPageState extends State<MenuPrimaryPage> {
           tabs: const [
             GButton(
               icon: Ionicons.home,
-              text: 'Principal',
+              text: '    Principal',
               iconActiveColor: Colors.white,
               textColor: Colors.white,
             ),
             GButton(
               icon: Ionicons.book_sharp,
-              text: 'Notas',
+              text: '    Notas',
               iconActiveColor: Colors.white,
               textColor: Colors.white,
             ),
             GButton(
               icon: Ionicons.search_sharp,
-              text: 'Search',
+              text: '    Search',
               iconActiveColor: Colors.white,
               textColor: Colors.white,
             ),
             GButton(
               icon: Ionicons.person_sharp,
-              text: 'Perfil',
+              text: '    Perfil',
               iconActiveColor: Colors.white,
               textColor: Colors.white,
             ),

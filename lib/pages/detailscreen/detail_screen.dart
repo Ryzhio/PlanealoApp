@@ -237,7 +237,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                 );
                               },
                               child: const Text(
-                                'Reserva tu Viaje',
+                                'Planealo Viajero',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,

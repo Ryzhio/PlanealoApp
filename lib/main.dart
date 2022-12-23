@@ -3,10 +3,16 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
 import 'package:sqflite_flutter/pages/welcomepage/bienvenida_page.dart';
 import 'package:sqflite_flutter/pages/producto/lugar_page.dart';
+import 'package:sqflite_flutter/providers/login_provider.dart';
 import 'package:sqflite_flutter/providers/producto_provider.dart';
+import 'package:sqflite_flutter/routes/route.dart';
+import 'package:sqflite_flutter/services/index.dart';
 import 'package:sqflite_flutter/services/lugar_service.dart';
+import 'package:sqflite_flutter/share_prefences/preferences.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Preferences.init();
   runApp(const ProviderStateWidget());
 }
 
@@ -18,7 +24,13 @@ class ProviderStateWidget extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
+          create: (_) => LoginProvider(),
+        ),
+        ChangeNotifierProvider(
           create: (_) => LugaresService(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => AuthService(),
         ),
       ],
       child: const MyApp(),
@@ -40,9 +52,10 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
           primarySwatch: Colors.orange,
         ),
-        initialRoute: 'menu_page',
+        onGenerateRoute: MyRoutes.generateRoute,
+        initialRoute: 'bienvenida_page',
         routes: {
-          'menu_page': (_) => const BienvenidaPage(),
+          'bienvenida_page': (_) => const BienvenidaPage(),
           'lugar_page': (_) => const LugarPage(),
         },
       ),

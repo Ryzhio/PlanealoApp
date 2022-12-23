@@ -17,24 +17,29 @@ class CustomTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      onChanged: onChanged!,
-      initialValue: initialValue,
-      maxLines: maxLines,
-      keyboardType: keyboardType,
-      decoration: InputDecoration(
-        hintText: hintText,
-        enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(width: 2, color: Colors.green),
-          borderRadius: BorderRadius.circular(5),
+    return PhysicalModel(
+      borderRadius: BorderRadius.circular(15),
+      elevation: 20,
+      color: const Color.fromARGB(66, 158, 158, 158),
+      child: TextFormField(
+        onChanged: onChanged!,
+        initialValue: initialValue,
+        maxLines: maxLines,
+        keyboardType: keyboardType,
+        decoration: InputDecoration(
+          hintText: hintText,
+          enabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(width: 2, color: Colors.white),
+            borderRadius: BorderRadius.circular(15),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: const BorderSide(width: 2, color: Colors.white),
+            borderRadius: BorderRadius.circular(15),
+          ),
+          filled: true,
+          fillColor: Colors.white,
+          contentPadding: const EdgeInsets.all(15),
         ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(width: 2, color: Colors.green),
-          borderRadius: BorderRadius.circular(5),
-        ),
-        filled: true,
-        fillColor: const Color.fromARGB(255, 156, 255, 149),
-        contentPadding: const EdgeInsets.all(15),
       ),
     );
   }

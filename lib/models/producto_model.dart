@@ -8,8 +8,14 @@ class Producto {
   String? preciov;
   String? stock;
 
-  Producto(this.id, this.nombre, this.categoria, this.precioc, this.preciov,
-      this.stock);
+  Producto(
+    this.id,
+    this.nombre,
+    this.categoria,
+    this.precioc,
+    this.preciov,
+    this.stock,
+  );
 
   Producto.fromMap(Map<String, dynamic> map) {
     id = map["id"];

@@ -17,94 +17,96 @@ class _InicioPageState extends State<InicioPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 25, right: 20, top: 35),
-      child: Scaffold(
-        body: Center(
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'CONFIGURACIONES',
-                    style: GoogleFonts.playfairDisplay(
-                      fontSize: 23,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 1,
-                    ),
-                  )
-                ],
-              ),
-              const SizedBox(
-                height: 40,
-              ),
-              Row(
-                children: [
-                  MaterialButton(
-                    minWidth: 120,
-                    height: 50,
-                    color: Colors.amber,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6),
-                    ),
-                    onPressed: () => temaController.temaClaro(),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Modo claro",
-                          style: GoogleFonts.playfairDisplay(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1,
+    return Scaffold(
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(40),
+          child: Container(
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Ajustes',
+                      style: GoogleFonts.playfairDisplay(
+                        fontSize: 23,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 1,
+                      ),
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                Row(
+                  children: [
+                    MaterialButton(
+                      minWidth: 120,
+                      height: 50,
+                      color: Colors.amber,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      onPressed: () => temaController.temaClaro(),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Modo claro",
+                            style: GoogleFonts.playfairDisplay(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1,
+                            ),
                           ),
-                        ),
-                        const SizedBox(
-                          width: 25,
-                        ),
-                        const Icon(
-                          Ionicons.sunny_sharp,
-                          size: 30,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              Row(
-                children: [
-                  MaterialButton(
-                    minWidth: 120,
-                    height: 50,
-                    color: Colors.black38,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6),
-                    ),
-                    onPressed: () => temaController.temaOscuro(),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Modo oscuro",
-                          style: GoogleFonts.playfairDisplay(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1,
+                          const SizedBox(
+                            width: 25,
                           ),
-                        ),
-                        const SizedBox(
-                          width: 15,
-                        ),
-                        const Icon(
-                          Ionicons.moon,
-                          size: 30,
-                        ),
-                      ],
+                          const Icon(
+                            Ionicons.sunny_sharp,
+                            size: 30,
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
-              ),
-            ],
+                  ],
+                ),
+                const SizedBox(height: 20),
+                Row(
+                  children: [
+                    MaterialButton(
+                      minWidth: 120,
+                      height: 50,
+                      color: Colors.black38,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      onPressed: () => temaController.temaOscuro(),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Modo oscuro",
+                            style: GoogleFonts.playfairDisplay(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 15,
+                          ),
+                          const Icon(
+                            Ionicons.moon,
+                            size: 30,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
