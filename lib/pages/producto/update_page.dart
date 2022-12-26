@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sqflite_flutter/models/producto_model.dart';
-import 'package:sqflite_flutter/providers/producto_provider.dart';
+import 'package:planealo_app/models/producto_model.dart';
+import 'package:planealo_app/providers/producto_provider.dart';
 
 class UpdatePage extends StatefulWidget {
   final Producto product;

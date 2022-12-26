@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:sqflite_flutter/models/placepri_model.dart';
-import 'package:sqflite_flutter/pages/menu_second_page.dart';
-import 'package:sqflite_flutter/pages/comentspage/review_page.dart';
+import 'package:planealo_app/models/placepri_model.dart';
+import 'package:planealo_app/pages/menu_second_page.dart';
+import 'package:planealo_app/pages/comentspage/review_page.dart';
 
 class DetailScreen extends StatefulWidget {
   final PlaceInfo placeInfo;

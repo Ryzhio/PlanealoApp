@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sqflite_flutter/models/users.dart';
-import 'package:sqflite_flutter/widgets/custom_card.dart';
-import 'package:sqflite_flutter/widgets/profile_card.dart';
+import 'package:planealo_app/models/users.dart';
+import 'package:planealo_app/widgets/custom_card.dart';
+import 'package:planealo_app/widgets/profile_card.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);

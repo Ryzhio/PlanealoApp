@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:sqflite_flutter/providers/theme_provider.dart';
+import 'package:planealo_app/providers/theme_provider.dart';
 
 class InicioPage extends StatefulWidget {
   const InicioPage({super.key});

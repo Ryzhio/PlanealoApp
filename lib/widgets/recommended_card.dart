@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:sqflite_flutter/models/placepri_model.dart';
+import 'package:planealo_app/models/placepri_model.dart';
 
 class RecommendedCard extends StatelessWidget {
   final PlaceInfo placeInfo;

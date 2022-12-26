@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
-import 'package:sqflite_flutter/pages/welcomepage/bienvenida_page.dart';
-import 'package:sqflite_flutter/pages/producto/lugar_page.dart';
-import 'package:sqflite_flutter/providers/login_provider.dart';
-import 'package:sqflite_flutter/providers/off_sesion.dart';
-import 'package:sqflite_flutter/providers/producto_provider.dart';
-import 'package:sqflite_flutter/providers/storage_provider.dart';
-import 'package:sqflite_flutter/routes/route.dart';
-import 'package:sqflite_flutter/services/index.dart';
-import 'package:sqflite_flutter/services/lugar_service.dart';
-import 'package:sqflite_flutter/share_prefences/preferences.dart';
+import 'package:planealo_app/pages/welcomepage/bienvenida_page.dart';
+import 'package:planealo_app/pages/producto/lugar_page.dart';
+import 'package:planealo_app/providers/login_provider.dart';
+import 'package:planealo_app/providers/off_sesion.dart';
+import 'package:planealo_app/providers/producto_provider.dart';
+import 'package:planealo_app/providers/storage_provider.dart';
+import 'package:planealo_app/routes/route.dart';
+import 'package:planealo_app/services/index.dart';
+import 'package:planealo_app/services/lugar_service.dart';
+import 'package:planealo_app/share_prefences/preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
       providers: [ChangeNotifierProvider(create: (_) => ProductoProvider())],
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'PlanéaloApp',
+        title: 'Planéalo',
         theme: ThemeData(
           useMaterial3: true,
           primarySwatch: Colors.orange,

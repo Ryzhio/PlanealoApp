@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sqflite_flutter/models/users.dart';
+import 'package:planealo_app/models/users.dart';
 
 class CustomCard extends StatefulWidget {
   final User user;

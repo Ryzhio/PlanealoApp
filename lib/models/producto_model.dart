@@ -1,4 +1,4 @@
-import 'package:sqflite_flutter/services/db_producto.dart';
+import 'package:planealo_app/services/db_producto.dart';
 
 class Producto {
   int? id;

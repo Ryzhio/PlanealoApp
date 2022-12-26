@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sqflite_flutter/pages/index.dart';
+import 'package:planealo_app/pages/index.dart';
 
 class MyRoutes {
   static const String rHOME = '/inicio';

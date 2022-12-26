@@ -1,6 +1,6 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-import 'package:sqflite_flutter/models/producto_model.dart';
+import 'package:planealo_app/models/producto_model.dart';
 
 class DBProducto {
   static const _databaseName = 'Example';
@@ -36,7 +36,8 @@ class DBProducto {
 
   //CREACION DE LA TABLE
   Future _onCreate(Database db, int version) async {
-    await db.execute('''
+    await db.execute(
+        '''
       CREATE TABLE $table(
         $columnId INTEGER PRIMARY KEY AUTOINCREMENT,
         $columnNombre TEXT NOT NULL,

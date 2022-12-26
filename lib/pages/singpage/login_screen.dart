@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
-import 'package:sqflite_flutter/providers/provider_login.dart';
-import 'package:sqflite_flutter/routes/route.dart';
-import 'package:sqflite_flutter/services/index.dart';
+import 'package:planealo_app/providers/provider_login.dart';
+import 'package:planealo_app/routes/route.dart';
+import 'package:planealo_app/services/index.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

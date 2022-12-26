@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:sqflite_flutter/pages/producto/update_page.dart';
-import 'package:sqflite_flutter/providers/producto_provider.dart';
+import 'package:planealo_app/pages/producto/update_page.dart';
+import 'package:planealo_app/providers/producto_provider.dart';
 
 class ProductosPage extends StatelessWidget {
   const ProductosPage({super.key});

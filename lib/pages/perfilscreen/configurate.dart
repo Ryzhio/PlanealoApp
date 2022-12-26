@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sqflite_flutter/models/users.dart';
-import 'package:sqflite_flutter/providers/storage_provider.dart';
-import 'package:sqflite_flutter/widgets/textformfield_widget.dart';
+import 'package:planealo_app/models/users.dart';
+import 'package:planealo_app/providers/storage_provider.dart';
+import 'package:planealo_app/widgets/textformfield_widget.dart';
 
 class ConfigPage extends StatefulWidget {
   final User user;

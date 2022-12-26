@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:sqflite_flutter/providers/producto_provider.dart';
+import 'package:planealo_app/providers/producto_provider.dart';
 
 final nombreController = TextEditingController();
 final categoriaController = TextEditingController();

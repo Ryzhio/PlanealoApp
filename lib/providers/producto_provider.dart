@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:sqflite_flutter/models/producto_model.dart';
-import 'package:sqflite_flutter/services/db_producto.dart';
+import 'package:planealo_app/models/producto_model.dart';
+import 'package:planealo_app/services/db_producto.dart';
 
 class ProductoProvider extends ChangeNotifier {
   final dbProducto = DBProducto.instance;

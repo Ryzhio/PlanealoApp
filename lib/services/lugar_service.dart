@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
-import 'package:sqflite_flutter/models/lugar_model.dart';
+import 'package:planealo_app/models/lugar_model.dart';
 
 class LugaresService extends ChangeNotifier {
   final String baseUrl = 'https://planealo-app-default-rtdb.firebaseio.com';

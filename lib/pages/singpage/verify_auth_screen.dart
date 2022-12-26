@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sqflite_flutter/routes/route.dart';
-import 'package:sqflite_flutter/services/service_auth.dart';
+import 'package:planealo_app/routes/route.dart';
+import 'package:planealo_app/services/service_auth.dart';
 
 class VerifyAuthScreen extends StatelessWidget {
   const VerifyAuthScreen({super.key});

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:sqflite_flutter/models/users.dart';
-import 'package:sqflite_flutter/pages/perfilscreen/profile_screen.dart';
-import 'package:sqflite_flutter/pages/producto/principal_page.dart';
+import 'package:planealo_app/models/users.dart';
+import 'package:planealo_app/pages/perfilscreen/profile_screen.dart';
+import 'package:planealo_app/pages/producto/principal_page.dart';
 
 class MenuPrimaryPage extends StatefulWidget {
   const MenuPrimaryPage({super.key});

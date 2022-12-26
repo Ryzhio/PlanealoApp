@@ -1,7 +1,7 @@
-import 'package:sqflite_flutter/providers/lugar_provider.dart';
-import 'package:sqflite_flutter/services/lugar_service.dart';
-import 'package:sqflite_flutter/widgets/textformfield_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:planealo_app/providers/lugar_provider.dart';
+import 'package:planealo_app/services/lugar_service.dart';
+import 'package:planealo_app/widgets/textformfield_widget.dart';
 import 'package:provider/provider.dart';
 
 class LugarPage extends StatelessWidget {

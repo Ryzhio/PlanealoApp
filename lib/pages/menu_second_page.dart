@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:sqflite_flutter/pages/reservationspage/create_page.dart';
-import 'package:sqflite_flutter/pages/themesmode/productos_page.dart';
+import 'package:planealo_app/pages/reservationspage/create_page.dart';
+import 'package:planealo_app/pages/themesmode/productos_page.dart';
 
 class MenuSecondPage extends StatefulWidget {
   const MenuSecondPage({super.key});

@@ -1,4 +1,4 @@
-export 'package:sqflite_flutter/pages/menu_primary_page.dart';
-export 'package:sqflite_flutter/pages/singpage/login_screen.dart';
-export 'package:sqflite_flutter/pages/singpage/register_screen.dart';
-export 'package:sqflite_flutter/pages/singpage/verify_auth_screen.dart';
+export 'package:planealo_app/pages/menu_primary_page.dart';
+export 'package:planealo_app/pages/singpage/login_screen.dart';
+export 'package:planealo_app/pages/singpage/register_screen.dart';
+export 'package:planealo_app/pages/singpage/verify_auth_screen.dart';

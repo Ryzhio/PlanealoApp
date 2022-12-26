@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:sqflite_flutter/models/lugar_model.dart';
+import 'package:planealo_app/models/lugar_model.dart';
 
 class LugarFormProvider extends ChangeNotifier {
   GlobalKey<FormState> formkey = GlobalKey<FormState>();

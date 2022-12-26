@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sqflite_flutter/pages/menu_primary_page.dart';
-import 'package:sqflite_flutter/pages/singpage/login_screen.dart';
+import 'package:planealo_app/pages/singpage/login_screen.dart';
 
 class BienvenidaPage extends StatelessWidget {
   const BienvenidaPage({super.key});

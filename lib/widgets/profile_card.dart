@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:sqflite_flutter/models/users.dart';
-import 'package:sqflite_flutter/pages/perfilscreen/configurate.dart';
-import 'package:sqflite_flutter/pages/themesmode/config_pages.dart';
-import 'package:sqflite_flutter/providers/off_sesion.dart';
+import 'package:planealo_app/models/users.dart';
+import 'package:planealo_app/pages/perfilscreen/configurate.dart';
+import 'package:planealo_app/pages/themesmode/config_pages.dart';
+import 'package:planealo_app/providers/off_sesion.dart';
 
 class ProfileCard extends StatelessWidget {
   final User user;

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:sqflite_flutter/models/placepri_model.dart';
-import 'package:sqflite_flutter/models/users.dart';
-import 'package:sqflite_flutter/pages/detailscreen/detail_page.dart';
-import 'package:sqflite_flutter/pages/detailscreen/detail_screen.dart';
-import 'package:sqflite_flutter/widgets/category_card.dart';
-import 'package:sqflite_flutter/widgets/recommended_card.dart';
+import 'package:planealo_app/models/placepri_model.dart';
+import 'package:planealo_app/models/users.dart';
+import 'package:planealo_app/pages/detailscreen/detail_page.dart';
+import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
+import 'package:planealo_app/widgets/category_card.dart';
+import 'package:planealo_app/widgets/recommended_card.dart';
 
 class PrincipalPage extends StatefulWidget {
   final User user;

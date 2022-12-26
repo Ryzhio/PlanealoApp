@@ -1,8 +1,8 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:sqflite_flutter/models/lugar_model.dart';
-import 'package:sqflite_flutter/services/lugar_service.dart';
-import 'package:sqflite_flutter/widgets/card_widget.dart';
+import 'package:planealo_app/models/lugar_model.dart';
+import 'package:planealo_app/services/lugar_service.dart';
+import 'package:planealo_app/widgets/card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
