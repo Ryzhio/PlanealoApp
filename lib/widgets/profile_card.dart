@@ -91,7 +91,7 @@ class ProfileCard extends StatelessWidget {
                     MaterialButton(
                       minWidth: 160,
                       height: 56,
-                      color: const Color(0xff4245ff),
+                      color: Colors.amber,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -118,7 +118,7 @@ class ProfileCard extends StatelessWidget {
                     MaterialButton(
                       minWidth: 160,
                       height: 56,
-                      color: const Color(0xff4245ff),
+                      color: Colors.amber,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -195,7 +195,7 @@ class ProfileCard extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: FloatingActionButton(
                         onPressed: () {
-                          // launchcherProvider.goBrowserLauncher();
+                          launcherProvider.goBrowserLauncher();
                         },
                         backgroundColor: Colors.amber,
                         child: const Icon(

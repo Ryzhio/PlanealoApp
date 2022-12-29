@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/models/users.dart';
+import 'package:planealo_app/pages/Video/video_page.dart';
 import 'package:planealo_app/pages/detailscreen/detail_page.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
+import 'package:planealo_app/search/search_page.dart';
 import 'package:planealo_app/widgets/category_card.dart';
 import 'package:planealo_app/widgets/recommended_card.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class PrincipalPage extends StatefulWidget {
   final User user;
@@ -26,7 +29,7 @@ class _PrincipalPageState extends State<PrincipalPage> {
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
             child: Column(
               children: [
-                //APP BAR
+                // APP BAR
                 Row(
                   children: [
                     CircleAvatar(
@@ -56,12 +59,35 @@ class _PrincipalPageState extends State<PrincipalPage> {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Text(
+                      'Te Damos la Bienvenida',
+                      style: TextStyle(
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                //VIDEO OF PRESENTACION
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: const VideoPage(),
+                ),
                 //SEARCH SECTION
                 const SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 const Text(
-                  'Explora tú nuevo destino',
+                  'Encuentra tú nuevo destino',
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.bold,
@@ -83,13 +109,16 @@ class _PrincipalPageState extends State<PrincipalPage> {
                           vertical: 5, horizontal: 10),
                       child: Row(
                         children: [
+                          //SEARCH
                           Expanded(
-                            child: TextFormField(
-                              decoration: const InputDecoration(
-                                hintText: "Busca tu destino",
-                                prefixIcon: Icon(Ionicons.search),
-                                enabledBorder: InputBorder.none,
-                                focusedBorder: InputBorder.none,
+                            child: ListTile(
+                              title: const Text(
+                                'Busca tu destino',
+                                style: TextStyle(color: Colors.black45),
+                              ),
+                              onTap: () => showSearch(
+                                context: context,
+                                delegate: Search(),
                               ),
                             ),
                           ),
@@ -100,7 +129,7 @@ class _PrincipalPageState extends State<PrincipalPage> {
                               Icons.sort_by_alpha_sharp,
                               color: Colors.white,
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),

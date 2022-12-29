@@ -151,13 +151,14 @@ class _ConfigPageState extends State<ConfigPage> {
                       height: 10,
                     ),
                     SizedBox(
-                        width: double.infinity,
-                        height: 64,
-                        child: CustomTextFormField(
-                          hintText: 'Ingrese su correo',
-                          initialValue: '',
-                          onChanged: (value) => value,
-                        ))
+                      width: double.infinity,
+                      height: 64,
+                      child: CustomTextFormField(
+                        hintText: 'Ingrese su correo',
+                        initialValue: '',
+                        onChanged: (value) => value,
+                      ),
+                    ),
                   ],
                 ),
                 Column(

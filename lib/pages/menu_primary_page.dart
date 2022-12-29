@@ -24,7 +24,7 @@ class _MenuPrimaryPageState extends State<MenuPrimaryPage> {
   final colors = [
     Colors.orange,
     // Colors.purple,
-    Colors.red,
+    Colors.orange,
     // Colors.green,
   ];
 

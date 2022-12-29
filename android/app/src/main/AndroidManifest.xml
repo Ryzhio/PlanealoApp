@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sqflite_flutter">
+    package="com.plandev.planealoapp">
     <uses-permission android:name="android.permission.INTERNET"/>
     <queries>
       <intent>

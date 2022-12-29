@@ -117,42 +117,6 @@ class _DetailScreenState extends State<DetailScreen> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            // const SizedBox(
-                            //   height: 12,
-                            // ),
-                            // // Row(
-                            // //   children: [
-                            // //     Icon(
-                            // //       Ionicons.location,
-                            // //       color: Colors.orange[400],
-                            // //     ),
-                            // //     const SizedBox(
-                            // //       width: 12,
-                            // //     ),
-                            // //     Text(
-                            // //       widget.placeInfo.location,
-                            // //       style: const TextStyle(
-                            // //         color: Colors.blueGrey,
-                            // //         fontSize: 20,
-                            // //       ),
-                            // //     ),
-                            // //     Visibility(
-                            // //       visible: launchcherProvider.isVisible,
-                            // //       child: Padding(
-                            // //         padding: const EdgeInsets.all(8.0),
-                            // //         child: FloatingActionButton(
-                            // //           onPressed: () {
-                            // //             launchcherProvider.goMapLauncher();
-                            // //           },
-                            // //           backgroundColor: Colors.green,
-                            // //           child: const Icon(
-                            // //             Icons.email,
-                            // //           ),
-                            // //         ),
-                            // //       ),
-                            // //     ),
-                            // //   ],
-                            // // ),
                             const SizedBox(
                               height: 15,
                             ),
@@ -267,7 +231,7 @@ class _DetailScreenState extends State<DetailScreen> {
                             MaterialButton(
                               minWidth: 180,
                               height: 65,
-                              color: Colors.red[500],
+                              // color: Colors.amber[100],
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(6),
                               ),

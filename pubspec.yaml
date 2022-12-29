@@ -48,12 +48,13 @@ dependencies:
   supabase_flutter: ^1.2.2
   supercharged: ^2.1.1
   url_launcher: ^6.1.7
+  youtube_player_flutter: ^8.1.2
 
 dev_dependencies:
+  flutter_launcher_icons: "^0.11.0"
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.11.0"
 flutter_icons:
   android: "launcher_icon"
   ios: true

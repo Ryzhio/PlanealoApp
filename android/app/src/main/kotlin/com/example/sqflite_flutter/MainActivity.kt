@@ -1,4 +1,4 @@
-package com.example.sqflite_flutter
+package com.plandev.planealoapp
 
 import io.flutter.embedding.android.FlutterActivity
 
