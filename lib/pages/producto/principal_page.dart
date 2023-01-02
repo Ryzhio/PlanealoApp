@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/placepri_model.dart';
+import 'package:planealo_app/models/search_model.dart';
 import 'package:planealo_app/models/users.dart';
 import 'package:planealo_app/pages/Video/video_page.dart';
+import 'package:planealo_app/pages/departments/departments_page.dart';
+import 'package:planealo_app/pages/detailscreen/detail_depart.dart';
 import 'package:planealo_app/pages/detailscreen/detail_page.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/search/search_page.dart';
-import 'package:planealo_app/widgets/category_card.dart';
 import 'package:planealo_app/widgets/recommended_card.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class PrincipalPage extends StatefulWidget {
   final User user;
@@ -112,22 +113,26 @@ class _PrincipalPageState extends State<PrincipalPage> {
                           //SEARCH
                           Expanded(
                             child: ListTile(
-                              title: const Text(
-                                'Busca tu destino',
-                                style: TextStyle(color: Colors.black45),
-                              ),
-                              onTap: () => showSearch(
-                                context: context,
-                                delegate: Search(),
-                              ),
-                            ),
+                                iconColor: Colors.amber,
+                                trailing: const Icon(Icons.search),
+                                title: const Text(
+                                  'Busca tu destino',
+                                  style: TextStyle(color: Colors.black45),
+                                ),
+                                onTap: () {
+                                  showSearch(
+                                    context: context,
+                                    delegate: Search(),
+                                  );
+                                }),
                           ),
                           CircleAvatar(
-                            radius: 22,
+                            radius: 23,
                             backgroundColor: Colors.orange[400],
                             child: const Icon(
-                              Icons.sort_by_alpha_sharp,
+                              Ionicons.map,
                               color: Colors.white,
+                              size: 25,
                             ),
                           ),
                         ],
@@ -135,8 +140,6 @@ class _PrincipalPageState extends State<PrincipalPage> {
                     ),
                   ),
                 ),
-
-                //DEPARTAMENTOS
                 const SizedBox(
                   height: 20,
                 ),
@@ -154,72 +157,28 @@ class _PrincipalPageState extends State<PrincipalPage> {
                 const SizedBox(
                   height: 10,
                 ),
-                Container(
+                SizedBox(
                   height: 70,
-                  child: ListView(
+                  child: ListView.builder(
+                    itemCount: depart.length,
                     scrollDirection: Axis.horizontal,
-                    children: [
-                      Row(
+                    itemBuilder: (context, index) {
+                      return Row(
                         children: [
-                          CategoryCard(
-                            prees: () {
+                          DepartmentsPage(
+                            searchModel: depart[index],
+                            press: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => DetailPage(
-                                    placeInfo: placesp.first,
-                                  ),
+                                  builder: (context) => const DetailDepart(),
                                 ),
                               );
                             },
-                            image: 'assets/city5.jpg',
-                            title: 'Arequipa',
-                          ),
-                          CategoryCard(
-                            prees: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => DetailPage(
-                                    placeInfo: placesp.first,
-                                  ),
-                                ),
-                              );
-                            },
-                            image: 'assets/city6.jpg',
-                            title: 'Ica',
-                          ),
-                          CategoryCard(
-                            prees: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => DetailPage(
-                                    placeInfo: placesp.first,
-                                  ),
-                                ),
-                              );
-                            },
-                            image: 'assets/city1.jpg',
-                            title: 'Piura',
-                          ),
-                          CategoryCard(
-                            prees: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => DetailPage(
-                                    placeInfo: placesp.first,
-                                  ),
-                                ),
-                              );
-                            },
-                            image: 'assets/city3.jpg',
-                            title: 'Loreto',
-                          ),
+                          )
                         ],
-                      ),
-                    ],
+                      );
+                    },
                   ),
                 ),
 
@@ -241,7 +200,8 @@ class _PrincipalPageState extends State<PrincipalPage> {
                 const SizedBox(
                   height: 10,
                 ),
-                Container(
+                //RECOMENDADOS
+                SizedBox(
                   height: 300,
                   child: ListView.builder(
                     itemCount: placesp.length,

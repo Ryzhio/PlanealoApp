@@ -1,27 +1,101 @@
 import 'package:flutter/material.dart';
+import 'package:planealo_app/models/placepri_model.dart';
+import 'package:planealo_app/models/search_model.dart';
+import 'package:planealo_app/pages/departments/departments_page.dart';
+import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 
 class Search extends SearchDelegate {
+  List<dynamic> recentSearch = [
+    'Cuzco',
+    'Piura',
+    'Lima',
+    'Ica',
+    'Loreto',
+  ];
+
   @override
   List<Widget>? buildActions(BuildContext context) {
-    return <Widget>[
-      IconButton(onPressed: () {}, icon: const Icon(Icons.clear))
+    return [
+      IconButton(
+        onPressed: () => query = '',
+        icon: const Icon(Icons.clear),
+      )
     ];
   }
 
   @override
   Widget? buildLeading(BuildContext context) {
-    return IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back));
+    return IconButton(
+      onPressed: () => close(context, null),
+      icon: const Icon(Icons.arrow_back),
+    );
   }
 
   @override
   Widget buildResults(BuildContext context) {
-    // TODO: implement buildResults
-    return Text('data');
+    return ListView.builder(
+      padding: const EdgeInsets.only(left: 15, right: 15),
+      itemCount: depart.length,
+      scrollDirection: Axis.vertical,
+      itemBuilder: (context, index) {
+        return Row(
+          children: [
+            DepartmentsPage(
+              searchModel: depart[index],
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailScreen(
+                      placeInfo: placesp[index],
+                    ),
+                  ),
+                );
+              },
+            )
+          ],
+        );
+      },
+    );
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    // TODO: implement buildSuggestions
-    return Text('');
+    return ListView.builder(
+      padding: const EdgeInsets.only(left: 15, right: 15),
+      itemCount: depart.length,
+      scrollDirection: Axis.vertical,
+      itemBuilder: (context, index) {
+        return Row(
+          children: [
+            DepartmentsPage(
+              searchModel: depart[index],
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailScreen(
+                      placeInfo: placesp[index],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ],
+        );
+      },
+    );
+    // return ListView.builder(
+    //   itemCount: recentSearch.length,
+    //   itemBuilder: (context, index) {
+    //     return ListTile(
+    //       title: Text(recentSearch[index]),
+    //       trailing: const Icon(
+    //         Icons.arrow_forward_ios,
+    //       ),
+    //       onTap: () {},
+    //     );
+    //   },
+    // );
   }
 }

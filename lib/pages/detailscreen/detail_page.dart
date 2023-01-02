@@ -1,309 +1,97 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:ionicons/ionicons.dart';
-import 'package:planealo_app/models/placepri_model.dart';
-import 'package:planealo_app/pages/menu_second_page.dart';
-import 'package:planealo_app/pages/comentspage/review_page.dart';
+import 'package:planealo_app/pages/detailscreen/slider_tile.dart';
 
 class DetailPage extends StatefulWidget {
-  final PlaceInfo placeInfo;
-  const DetailPage({super.key, required this.placeInfo});
+  const DetailPage({super.key});
 
   @override
   State<DetailPage> createState() => _DetailPageState();
 }
 
 class _DetailPageState extends State<DetailPage> {
+  final PageController _pageController = PageController(viewportFraction: 0.8);
+  int _currentPage = 0;
+
+  List _listSlide = [
+    {'id': 0, 'image': 'assets/city1.jpg'},
+    {'id': 1, 'image': 'assets/city2.jpg'},
+    {'id': 2, 'image': 'assets/city3.jpg'},
+    {'id': 3, 'image': 'assets/city4.jpg'},
+    {'id': 4, 'image': 'assets/city5.jpg'},
+    {'id': 5, 'image': 'assets/city6.jpg'},
+  ];
+
+  @override
+  void initState() {
+    _pageController.addListener(() {
+      int next = _pageController.page!.round();
+      if (_currentPage != next) {
+        setState(() {
+          _currentPage = next;
+        });
+      }
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: Stack(
-        children: [
-          Image.asset(
-            widget.placeInfo.image,
-            width: double.infinity,
-            fit: BoxFit.cover,
-            height: MediaQuery.of(context).size.height * 0.428,
-          ),
-          SafeArea(
-            child: Column(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Column(
               children: [
-                //APPBAR BUTTONS
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      InkWell(
-                        onTap: () {
-                          Navigator.pop(context);
-                        },
-                        child: Material(
-                          elevation: 5,
-                          borderRadius: BorderRadius.circular(100),
-                          child: Padding(
-                            padding: const EdgeInsets.all(6.0),
-                            child: Container(
-                              height: 25,
-                              width: 25,
-                              decoration: BoxDecoration(
-                                color: Colors.orange[400],
-                                shape: BoxShape.circle,
-                              ),
-                              child: const Center(
-                                child: Icon(
-                                  Ionicons.arrow_back_outline,
-                                  color: Colors.white,
-                                  size: 16,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      InkWell(
-                        onTap: () {},
-                        child: Material(
-                          elevation: 5,
-                          borderRadius: BorderRadius.circular(100),
-                          child: Padding(
-                            padding: const EdgeInsets.all(6.0),
-                            child: Container(
-                              height: 25,
-                              width: 25,
-                              decoration: const BoxDecoration(
-                                color: Colors.white,
-                                shape: BoxShape.circle,
-                              ),
-                              child: Center(
-                                child: Icon(
-                                  Ionicons.star,
-                                  color: Colors.orange[400],
-                                  size: 25,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-
-                ///
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.3,
-                ),
                 Expanded(
-                  child: Container(
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 20),
-                      child: SingleChildScrollView(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              widget.placeInfo.name,
-                              style: const TextStyle(
-                                fontSize: 26,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 12,
-                            ),
-                            Row(
-                              children: [
-                                Icon(
-                                  Ionicons.location,
-                                  color: Colors.orange[400],
-                                ),
-                                const SizedBox(
-                                  width: 12,
-                                ),
-                                Text(
-                                  widget.placeInfo.location,
-                                  style: const TextStyle(
-                                    color: Colors.blueGrey,
-                                    fontSize: 20,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 15,
-                            ),
-                            const Text(
-                              'Detalles del Viaje',
-                              style: TextStyle(
-                                fontSize: 22,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              widget.placeInfo.desc,
-                              style: const TextStyle(
-                                color: Colors.blueGrey,
-                                fontSize: 18,
-                              ),
-                              textAlign: TextAlign.justify,
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            const Divider(
-                              height: 5,
-                              color: Colors.black,
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Row(
-                              children: [
-                                const Text(
-                                  'Duración',
-                                  style: TextStyle(
-                                    color: Colors.blueGrey,
-                                    fontSize: 20,
-                                  ),
-                                ),
-                                const SizedBox(
-                                  width: 12,
-                                ),
-                                Expanded(
-                                  child: Text(
-                                    '${widget.placeInfo.days} días',
-                                    style: const TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            Row(
-                              children: [
-                                const Text(
-                                  'Duración',
-                                  style: TextStyle(
-                                    color: Colors.blueGrey,
-                                    fontSize: 20,
-                                  ),
-                                ),
-                                const SizedBox(
-                                  width: 12,
-                                ),
-                                Expanded(
-                                  child: Text(
-                                    '${widget.placeInfo.distance}  km',
-                                    style: const TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            MaterialButton(
-                              color: Colors.orange[400],
-                              minWidth: double.infinity,
-                              height: 55,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(100),
-                              ),
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MenuSecondPage(),
-                                  ),
-                                );
-                              },
-                              child: const Text(
-                                'Planealo Viajero',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 22,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            MaterialButton(
-                              minWidth: 180,
-                              height: 65,
-                              color: Colors.red[500],
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6),
-                              ),
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => const ReviewPage(),
-                                  ),
-                                );
-                              },
-                              child: Row(
-                                children: [
-                                  const SizedBox(
-                                    width: 10,
-                                  ),
-                                  Image.asset(
-                                    'assets/cms.png',
-                                    scale: 7,
-                                  ),
-                                  const SizedBox(
-                                    width: 15,
-                                  ),
-                                  Text(
-                                    'Comentarios',
-                                    style: GoogleFonts.playfairDisplay(
-                                      color: Colors.black,
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    width: 15,
-                                  ),
-                                  const Icon(
-                                    Ionicons.arrow_forward_circle_outline,
-                                    color: Colors.black,
-                                    size: 30,
-                                  )
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+                  child: PageView.builder(
+                    controller: _pageController,
+                    itemCount: _listSlide.length,
+                    itemBuilder: (_, currentIndex) {
+                      bool activePage = currentIndex == _currentPage;
+                      return SliderTile(
+                        image: _listSlide[currentIndex]['image'],
+                        activePage: activePage,
+                      );
+                    },
                   ),
                 ),
+                _buildBullets()
               ],
             ),
-          ),
-        ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  _buildBullets() {
+    return Padding(
+      padding: const EdgeInsets.all(8),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: _listSlide.map(
+          (i) {
+            return
+                //  InkWell(
+                // onTap: () {
+                //   setState(() {
+                //     _pageController.jumpToPage(i('id'));
+                //     _currentPage = i('id');
+                //   });
+                // },
+                // child:
+                Container(
+              margin: const EdgeInsets.all(10),
+              width: 10,
+              height: 10,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: _currentPage == i['id'] ? Colors.red : Colors.grey,
+              ),
+            );
+            // );
+          },
+        ).toList(),
       ),
     );
   }

@@ -12,7 +12,7 @@ class BienvenidaPage extends StatelessWidget {
         image: DecorationImage(
           image: AssetImage('assets/cz.jpg'),
           fit: BoxFit.cover,
-          opacity: 0.6,
+          opacity: 0.5,
         ),
       ),
       child: Material(
@@ -49,7 +49,7 @@ class BienvenidaPage extends StatelessWidget {
               ),
               const SizedBox(height: 80),
               Text(
-                'Conoce tu PRÓXIMO lugar de VIAJE',
+                'Conoce tu \npróximo destino de\nVIAJE',
                 style: GoogleFonts.playfairDisplay(
                   color: Colors.white.withOpacity(0.9),
                   fontSize: 49,
@@ -63,7 +63,7 @@ class BienvenidaPage extends StatelessWidget {
               MaterialButton(
                 minWidth: 180,
                 height: 65,
-                color: Colors.redAccent,
+                color: Colors.yellow[900],
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(6),
                 ),

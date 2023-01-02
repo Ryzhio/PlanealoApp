@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:provider/provider.dart';
 import 'package:planealo_app/models/users.dart';
 import 'package:planealo_app/pages/perfilscreen/configurate.dart';
@@ -107,11 +108,11 @@ class ProfileCard extends StatelessWidget {
                       },
                       child: Text(
                         'Editar Perfil',
-                        style: GoogleFonts.playfairDisplay(
+                        style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1,
+                          // fontWeight: FontWeight.bold,
+                          // letterSpacing: 1,
                         ),
                       ),
                     ),
@@ -132,11 +133,11 @@ class ProfileCard extends StatelessWidget {
                       },
                       child: Text(
                         'Ajustes',
-                        style: GoogleFonts.playfairDisplay(
+                        style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1,
+                          // fontWeight: FontWeight.bold,
+                          // letterSpacing: 1,
                         ),
                       ),
                     ),
@@ -199,22 +200,22 @@ class ProfileCard extends StatelessWidget {
                         },
                         backgroundColor: Colors.amber,
                         child: const Icon(
-                          Icons.play_arrow,
+                          Ionicons.logo_youtube,
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: FloatingActionButton(
-                        onPressed: () {
-                          // launchcherProvider.goPhoneLauncher();
-                        },
-                        backgroundColor: Colors.red,
-                        child: const Icon(
-                          Icons.phone,
-                        ),
-                      ),
-                    ),
+                    // Padding(
+                    //   padding: const EdgeInsets.all(8.0),
+                    //   child: FloatingActionButton(
+                    //     onPressed: () {
+                    //       // launchcherProvider.goPhoneLauncher();
+                    //     },
+                    //     backgroundColor: Colors.red,
+                    //     child: const Icon(
+                    //       Icons.phone,
+                    //     ),
+                    //   ),
+                    // ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: FloatingActionButton(
@@ -223,7 +224,7 @@ class ProfileCard extends StatelessWidget {
                         },
                         backgroundColor: Colors.pink,
                         child: const Icon(
-                          Icons.whatsapp_outlined,
+                          Ionicons.logo_instagram,
                         ),
                       ),
                     ),
