@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/placepri_model.dart';
+import 'package:planealo_app/pages/detailscreen/detail_screen_image.dart';
 import 'package:planealo_app/pages/menu_second_page.dart';
 import 'package:planealo_app/pages/comentspage/review_page.dart';
 
@@ -21,18 +22,18 @@ class _DetailScreenState extends State<DetailScreen> {
       backgroundColor: Colors.white,
       body: Stack(
         children: [
-          Image.asset(
-            widget.placeInfo.image,
-            width: double.infinity,
-            fit: BoxFit.cover,
-            height: MediaQuery.of(context).size.height * 0.428,
+          Column(
+            // ignore: prefer_const_literals_to_create_immutables
+            children: [
+              const DetailScreenImage(),
+            ],
           ),
           SafeArea(
             child: Column(
               children: [
                 //APPBAR BUTTONS
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.only(left: 15, top: 30, right: 15),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
