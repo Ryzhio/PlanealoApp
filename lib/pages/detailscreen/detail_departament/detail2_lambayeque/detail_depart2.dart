@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
+import 'package:planealo_app/models/event_model/event2_lambayeque/event_models2.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/pages/detailscreen/event_screen/event2_Lambayeque/event_lamba1.dart';
@@ -131,7 +131,7 @@ class _DetailDepart2State extends State<DetailDepart2> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLamba1(eventModels: eventlistt.first),
+                              EventLamba1(eventModels2: eventlisttlam.first),
                             ],
                           ),
                         ),
@@ -140,7 +140,7 @@ class _DetailDepart2State extends State<DetailDepart2> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLamba2(eventModelss: eventlistt1.first),
+                              EventLamba2(eventModelss2: eventlistt1lam.first),
                             ],
                           ),
                         ),
@@ -149,7 +149,7 @@ class _DetailDepart2State extends State<DetailDepart2> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLamba3(eventModelsss: eventlistt2.first),
+                              EventLamba3(eventModelsss2: eventlistt2lam.first),
                             ],
                           ),
                         ),
@@ -158,7 +158,8 @@ class _DetailDepart2State extends State<DetailDepart2> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLamba4(eventModelssss: eventlistt3.first),
+                              EventLamba4(
+                                  eventModelssss2: eventlistt3lam.first),
                             ],
                           ),
                         ),
@@ -167,7 +168,8 @@ class _DetailDepart2State extends State<DetailDepart2> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLamba5(eventModelsssss: eventlistt4.first),
+                              EventLamba5(
+                                  eventModelsssss2: eventlistt4lam.first),
                             ],
                           ),
                         ),
@@ -176,7 +178,8 @@ class _DetailDepart2State extends State<DetailDepart2> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLamba6(eventModelssssss: eventlistt5.first),
+                              EventLamba6(
+                                  eventModelssssss2: eventlistt5lam.first),
                             ],
                           ),
                         ),
@@ -185,7 +188,8 @@ class _DetailDepart2State extends State<DetailDepart2> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLamba7(eventModelsssssss: eventlistt6.first),
+                              EventLamba7(
+                                  eventModelsssssss2: eventlistt6lam.first),
                             ],
                           ),
                         ),

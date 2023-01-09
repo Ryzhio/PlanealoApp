@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
+import 'package:planealo_app/models/event_model/event5_arequipa/event_models5.dart';
 import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event5.dart';
 
 class EventArequi5 extends StatefulWidget {
-  final EventModelsssss eventModelsssss;
-  const EventArequi5({super.key, required this.eventModelsssss});
+  final EventModelsssss5 eventModelsssss5;
+  const EventArequi5({super.key, required this.eventModelsssss5});
 
   @override
   State<EventArequi5> createState() => _EventArequi5State();
@@ -41,7 +42,7 @@ class _EventArequi5State extends State<EventArequi5> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelsssss.textListt4,
+                  widget.eventModelsssss5.textListt4arequi,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventArequi5State extends State<EventArequi5> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssss.mesListt4,
+                      widget.eventModelsssss5.mesListt4arequi,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventArequi5State extends State<EventArequi5> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssss.msgListt4,
+                      widget.eventModelsssss5.msgListt4arequi,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

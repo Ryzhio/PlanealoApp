@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
+import 'package:planealo_app/models/event_model/event3_loreto/event_models3.dart';
 import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event4.dart';
 
 class EventLoret4 extends StatefulWidget {
-  final EventModelssss eventModelssss;
-  const EventLoret4({super.key, required this.eventModelssss});
+  final EventModelssss3 eventModelssss3;
+  const EventLoret4({super.key, required this.eventModelssss3});
 
   @override
   State<EventLoret4> createState() => _EventLoret4State();
@@ -41,7 +42,7 @@ class _EventLoret4State extends State<EventLoret4> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelssss.textListt3,
+                  widget.eventModelssss3.textListt3loret,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventLoret4State extends State<EventLoret4> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssss.mesListt3,
+                      widget.eventModelssss3.mesListt3loret,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventLoret4State extends State<EventLoret4> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssss.msgListt3,
+                      widget.eventModelssss3.msgListt3loret,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
+import 'package:planealo_app/models/event_model/event4_lima/event_models4.dart';
 import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event6.dart';
 
 class EventLima6 extends StatefulWidget {
-  final EventModelssssss eventModelssssss;
-  const EventLima6({super.key, required this.eventModelssssss});
+  final EventModelssssss4 eventModelssssss4;
+  const EventLima6({super.key, required this.eventModelssssss4});
 
   @override
   State<EventLima6> createState() => _EventLima6State();
@@ -41,7 +42,7 @@ class _EventLima6State extends State<EventLima6> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelssssss.textListt5,
+                  widget.eventModelssssss4.textListt5lima,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventLima6State extends State<EventLima6> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssssss.mesListt5,
+                      widget.eventModelssssss4.mesListt5lima,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventLima6State extends State<EventLima6> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssssss.msgListt5,
+                      widget.eventModelssssss4.msgListt5lima,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
