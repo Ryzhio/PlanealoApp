@@ -106,7 +106,7 @@ class ProfileCard extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Text(
+                      child: const Text(
                         'Editar Perfil',
                         style: TextStyle(
                           color: Colors.white,
@@ -131,7 +131,7 @@ class ProfileCard extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Text(
+                      child: const Text(
                         'Ajustes',
                         style: TextStyle(
                           color: Colors.white,
@@ -208,7 +208,7 @@ class ProfileCard extends StatelessWidget {
                     //   padding: const EdgeInsets.all(8.0),
                     //   child: FloatingActionButton(
                     //     onPressed: () {
-                    //       // launchcherProvider.goPhoneLauncher();
+                    // launchcherProvider.goPhoneLauncher();
                     //     },
                     //     backgroundColor: Colors.red,
                     //     child: const Icon(

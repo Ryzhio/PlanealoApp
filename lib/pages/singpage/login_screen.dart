@@ -50,8 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: [
                   SizedBox(
                     width: 300,
-                    child: Lottie.network(
-                        'https://assets8.lottiefiles.com/packages/lf20_mdbdc5l7.json'),
+                    child: Lottie.asset('assets/travel.json'),
                   ),
                   ChangeNotifierProvider(
                     create: (context) => ProviderLogin(),

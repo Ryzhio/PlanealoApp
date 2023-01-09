@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/placepri_model.dart';
-import 'package:planealo_app/models/search_model.dart';
 import 'package:planealo_app/models/users.dart';
 import 'package:planealo_app/pages/Video/video_page.dart';
-import 'package:planealo_app/pages/departments/departments_page.dart';
-import 'package:planealo_app/pages/detailscreen/detail_depart.dart';
-import 'package:planealo_app/pages/detailscreen/detail_page.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
+import 'package:planealo_app/pages/producto/list_departament.dart';
 import 'package:planealo_app/search/search_page.dart';
 import 'package:planealo_app/widgets/recommended_card.dart';
 
 class PrincipalPage extends StatefulWidget {
   final User user;
+
   const PrincipalPage({super.key, required this.user});
 
   @override
@@ -159,29 +157,18 @@ class _PrincipalPageState extends State<PrincipalPage> {
                 ),
                 SizedBox(
                   height: 70,
-                  child: ListView.builder(
-                    itemCount: depart.length,
+                  child: ListView(
+                    // itemCount: depart.length,
+                    children: [
+                      //LISTA DE DEPARTAMENTOS
+                      const ListDepartament(),
+                    ],
                     scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      return Row(
-                        children: [
-                          DepartmentsPage(
-                            searchModel: depart[index],
-                            press: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const DetailDepart(),
-                                ),
-                              );
-                            },
-                          )
-                        ],
-                      );
-                    },
+                    // itemBuilder: (context, index) {
+                    // return
+                    // },
                   ),
                 ),
-
                 //RECOMENDADOS
                 const SizedBox(
                   height: 20,
