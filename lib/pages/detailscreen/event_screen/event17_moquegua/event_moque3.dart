@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event17_moquegua/event_models17.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event3.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel17_moquegua/carrousel_screen_event_moque3.dart';
 
 class EventMoque3 extends StatefulWidget {
   final EventModelsss17 eventModelsss17;
@@ -34,8 +33,8 @@ class _EventMoque3State extends State<EventMoque3> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent3(
-                    eventModelsss: eventlistt2.first,
+                  child: CarrouselScreenEventMoque3(
+                    eventModelsss17: eventlistt2moque.first,
                   ),
                 ),
                 const SizedBox(

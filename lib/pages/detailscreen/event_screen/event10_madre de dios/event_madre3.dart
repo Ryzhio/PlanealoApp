@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event10_madre%20de%20dios/event_models10.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event3.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel10_madre%20de%20dios/carrousel_screen_event_madre3.dart';
 
 class EventMadre3 extends StatefulWidget {
   final EventModelsss10 eventModelsss10;
@@ -34,8 +33,8 @@ class _EventMadre3State extends State<EventMadre3> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent3(
-                    eventModelsss: eventlistt2.first,
+                  child: CarrouselScreenEventMadre3(
+                    eventModelsss10: eventlistt2madre.first,
                   ),
                 ),
                 const SizedBox(

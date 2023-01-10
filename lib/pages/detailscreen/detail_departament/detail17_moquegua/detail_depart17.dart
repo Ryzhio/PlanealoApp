@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event17_moquegua/event_models17.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/pages/detailscreen/event_screen/event17_moquegua/event_moque1.dart';
@@ -123,110 +122,81 @@ class _DetailDepart17State extends State<DetailDepart17> {
                 ),
                 //EVENTOS
                 SizedBox(
-                    height: 335,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        //EVENT 01
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventMoque1(eventModels17: eventlisttmoque.first),
-                            ],
-                          ),
+                  height: 335,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      //EVENT 01
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventMoque1(eventModels17: eventlisttmoque.first),
+                          ],
                         ),
-                        //EVENT 02
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventMoque2(
-                                  eventModelss17: eventlistt1moque.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 02
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventMoque2(eventModelss17: eventlistt1moque.first),
+                          ],
                         ),
-                        //EVENT 03
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventMoque3(
-                                  eventModelsss17: eventlistt2moque.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 03
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventMoque3(
+                                eventModelsss17: eventlistt2moque.first),
+                          ],
                         ),
-                        //EVENT 04
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventMoque4(
-                                  eventModelssss17: eventlistt3moque.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 04
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventMoque4(
+                                eventModelssss17: eventlistt3moque.first),
+                          ],
                         ),
-                        //EVENT 05
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventMoque5(
-                                  eventModelsssss17: eventlistt4moque.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 05
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventMoque5(
+                                eventModelsssss17: eventlistt4moque.first),
+                          ],
                         ),
-                        //EVENT 06
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventMoque6(
-                                  eventModelssssss17: eventlistt5moque.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 06
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventMoque6(
+                                eventModelssssss17: eventlistt5moque.first),
+                          ],
                         ),
-                        //EVENT 07
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventMoque7(
-                                  eventModelsssssss17: eventlistt6moque.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 07
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventMoque7(
+                                eventModelsssssss17: eventlistt6moque.first),
+                          ],
                         ),
-                      ],
-                    )
-                    // ListView.builder(
-                    //   itemCount: placesp.length,
-                    //   scrollDirection: Axis.horizontal,
-                    //   itemBuilder: (context, index) {
-                    //     return Padding(
-                    //       padding: const EdgeInsets.only(left: 15, right: 15),
-                    //       child: Row(
-                    //         // ignore: prefer_const_literals_to_create_immutables
-                    //         children: [
-                    //           //EVENTOS Y CARRUSEL
-                    //           EventDepart(
-                    //             eventModels: eventlistt[index],
-                    //             // press: () {
-                    //             //   Navigator.push(
-                    //             //     context,
-                    //             //     MaterialPageRoute(
-                    //             //       builder: (context) => DetailScreen(
-                    //             //         placeInfo: placesp[index],
-                    //             //       ),
-                    //             //     ),
-                    //             //   );
-                    //             // },
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     );
-                    //   },
-                    // ),
-                    ),
+                      ),
+                    ],
+                  ),
+                ),
                 const SizedBox(
                   height: 30,
                 )

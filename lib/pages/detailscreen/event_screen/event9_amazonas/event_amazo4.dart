@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/event_model/event9_amazonas/event_models9.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event4.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel9_amazonas/carrousel_screen_event_amazo4.dart';
 
 class EventAmazo4 extends StatefulWidget {
   final EventModelssss9 eventModelssss9;
@@ -34,8 +33,8 @@ class _EventAmazo4State extends State<EventAmazo4> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent4(
-                    eventModelssss: eventlistt3.first,
+                  child: CarrouselScreenEventAmazo4(
+                    eventModelssss9: eventlistt3amazo.first,
                   ),
                 ),
                 const SizedBox(

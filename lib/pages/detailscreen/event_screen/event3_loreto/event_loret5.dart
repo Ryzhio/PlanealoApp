@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/event_model/event3_loreto/event_models3.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event5.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel3_loreto/carrousel_screen_event_loret5.dart';
 
 class EventLoret5 extends StatefulWidget {
   final EventModelsssss3 eventModelsssss3;
@@ -34,8 +33,8 @@ class _EventLoret5State extends State<EventLoret5> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent5(
-                    eventModelsssss: eventlistt4.first,
+                  child: CarrouselScreenEventLoret5(
+                    eventModelsssss3: eventlistt4loret.first,
                   ),
                 ),
                 const SizedBox(

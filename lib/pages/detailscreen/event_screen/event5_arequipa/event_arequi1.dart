@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/event_model/event5_arequipa/event_models5.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel5_arequipa/carrousel_screen_event_arequi1.dart';
 
 class EventArequi1 extends StatefulWidget {
   final EventModels5 eventModels5;
@@ -34,8 +33,8 @@ class _EventArequi1State extends State<EventArequi1> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent(
-                    eventModels: eventlistt.first,
+                  child: CarrouselScreenEventArequi1(
+                    eventModels5: eventlisttarequi.first,
                   ),
                 ),
                 const SizedBox(

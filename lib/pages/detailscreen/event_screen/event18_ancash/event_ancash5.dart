@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event18_ancash/event_models18.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event5.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel18_ancash/carrousel_screen_event_ancash5.dart';
 
 class EventAncash5 extends StatefulWidget {
   final EventModelsssss18 eventModelsssss18;
@@ -34,8 +33,8 @@ class _EventAncash5State extends State<EventAncash5> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent5(
-                    eventModelsssss: eventlistt4.first,
+                  child: CarrouselScreenEventAncash5(
+                    eventModelsssss18: eventlistt4ancash.first,
                   ),
                 ),
                 const SizedBox(

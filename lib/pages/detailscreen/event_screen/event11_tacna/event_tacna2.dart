@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event11_tacna/event_models11.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event2.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel11_tacna/carrousel_screen_event_tacna2.dart';
 
 class EventTacna2 extends StatefulWidget {
   final EventModelss11 eventModelss11;
@@ -34,8 +33,8 @@ class _EventTacna2State extends State<EventTacna2> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent2(
-                    eventModelss: eventlistt1.first,
+                  child: CarrouselScreenEventTacna2(
+                    eventModelss11: eventlistt1tacna.first,
                   ),
                 ),
                 const SizedBox(

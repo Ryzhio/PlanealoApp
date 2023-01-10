@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event13_la%20libertad/event_models13.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel13_la%20libertad/carrousel_screen_event_libert6.dart';
 import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event6.dart';
 
 class EventLibert6 extends StatefulWidget {
@@ -34,8 +35,8 @@ class _EventLibert6State extends State<EventLibert6> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent6(
-                    eventModelssssss: eventlistt5.first,
+                  child: CarrouselScreenEventLibert6(
+                    eventModelssssss13: eventlistt5libert.first,
                   ),
                 ),
                 const SizedBox(

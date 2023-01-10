@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event12_tumbes/event_models12.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/pages/detailscreen/event_screen/event12_tumbes/event_tumb1.dart';
@@ -123,109 +122,79 @@ class _DetailDepart12State extends State<DetailDepart12> {
                 ),
                 //EVENTOS
                 SizedBox(
-                    height: 335,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        //EVENT 01
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTumb1(eventModels12: eventlistttumb.first),
-                            ],
-                          ),
+                  height: 335,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      //EVENT 01
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTumb1(eventModels12: eventlistttumb.first),
+                          ],
                         ),
-                        //EVENT 02
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTumb2(eventModelss12: eventlistt1tumb.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 02
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTumb2(eventModelss12: eventlistt1tumb.first),
+                          ],
                         ),
-                        //EVENT 03
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTumb3(
-                                  eventModelsss12: eventlistt2tumb.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 03
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTumb3(eventModelsss12: eventlistt2tumb.first),
+                          ],
                         ),
-                        //EVENT 04
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTumb4(
-                                  eventModelssss12: eventlistt3tumb.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 04
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTumb4(eventModelssss12: eventlistt3tumb.first),
+                          ],
                         ),
-                        //EVENT 05
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTumb5(
-                                  eventModelsssss12: eventlistt4tumb.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 05
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTumb5(
+                                eventModelsssss12: eventlistt4tumb.first),
+                          ],
                         ),
-                        //EVENT 06
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTumb6(
-                                  eventModelssssss12: eventlistt5tumb.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 06
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTumb6(
+                                eventModelssssss12: eventlistt5tumb.first),
+                          ],
                         ),
-                        //EVENT 07
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTumb7(
-                                  eventModelsssssss12: eventlistt6tumb.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 07
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTumb7(
+                                eventModelsssssss12: eventlistt6tumb.first),
+                          ],
                         ),
-                      ],
-                    )
-                    // ListView.builder(
-                    //   itemCount: placesp.length,
-                    //   scrollDirection: Axis.horizontal,
-                    //   itemBuilder: (context, index) {
-                    //     return Padding(
-                    //       padding: const EdgeInsets.only(left: 15, right: 15),
-                    //       child: Row(
-                    //         // ignore: prefer_const_literals_to_create_immutables
-                    //         children: [
-                    //           //EVENTOS Y CARRUSEL
-                    //           EventDepart(
-                    //             eventModels: eventlistt[index],
-                    //             // press: () {
-                    //             //   Navigator.push(
-                    //             //     context,
-                    //             //     MaterialPageRoute(
-                    //             //       builder: (context) => DetailScreen(
-                    //             //         placeInfo: placesp[index],
-                    //             //       ),
-                    //             //     ),
-                    //             //   );
-                    //             // },
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     );
-                    //   },
-                    // ),
-                    ),
+                      ),
+                    ],
+                  ),
+                ),
                 const SizedBox(
                   height: 30,
                 )

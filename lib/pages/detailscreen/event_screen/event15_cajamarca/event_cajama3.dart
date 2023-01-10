@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event15_cajamarca/event_models15.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event3.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel15_cajamarca/carrousel_screen_event_cajama3.dart';
 
 class EventCajama3 extends StatefulWidget {
   final EventModelsss15 eventModelsss15;
@@ -34,8 +33,8 @@ class _EventCajama3State extends State<EventCajama3> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent3(
-                    eventModelsss: eventlistt2.first,
+                  child: CarrouselScreenEventCajama3(
+                    eventModelsss15: eventlistt2cajama.first,
                   ),
                 ),
                 const SizedBox(

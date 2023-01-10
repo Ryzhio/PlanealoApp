@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event18_ancash/event_models18.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/pages/detailscreen/event_screen/event18_ancash/event_ancash1.dart';
@@ -123,111 +122,82 @@ class _DetailDepart18State extends State<DetailDepart18> {
                 ),
                 //EVENTOS
                 SizedBox(
-                    height: 335,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        //EVENT 01
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventAncash1(
-                                  eventModels18: eventlisttancash.first),
-                            ],
-                          ),
+                  height: 335,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      //EVENT 01
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventAncash1(eventModels18: eventlisttancash.first),
+                          ],
                         ),
-                        //EVENT 02
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventAncash2(
-                                  eventModelss18: eventlistt1ancash.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 02
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventAncash2(
+                                eventModelss18: eventlistt1ancash.first),
+                          ],
                         ),
-                        //EVENT 03
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventAncash3(
-                                  eventModelsss18: eventlistt2ancash.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 03
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventAncash3(
+                                eventModelsss18: eventlistt2ancash.first),
+                          ],
                         ),
-                        //EVENT 04
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventAncash4(
-                                  eventModelssss18: eventlistt3ancash.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 04
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventAncash4(
+                                eventModelssss18: eventlistt3ancash.first),
+                          ],
                         ),
-                        //EVENT 05
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventAncash5(
-                                  eventModelsssss18: eventlistt4ancash.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 05
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventAncash5(
+                                eventModelsssss18: eventlistt4ancash.first),
+                          ],
                         ),
-                        //EVENT 06
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventAncash6(
-                                  eventModelssssss18: eventlistt5ancash.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 06
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventAncash6(
+                                eventModelssssss18: eventlistt5ancash.first),
+                          ],
                         ),
-                        //EVENT 07
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventAncash7(
-                                  eventModelsssssss18: eventlistt6ancash.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 07
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventAncash7(
+                                eventModelsssssss18: eventlistt6ancash.first),
+                          ],
                         ),
-                      ],
-                    )
-                    // ListView.builder(
-                    //   itemCount: placesp.length,
-                    //   scrollDirection: Axis.horizontal,
-                    //   itemBuilder: (context, index) {
-                    //     return Padding(
-                    //       padding: const EdgeInsets.only(left: 15, right: 15),
-                    //       child: Row(
-                    //         // ignore: prefer_const_literals_to_create_immutables
-                    //         children: [
-                    //           //EVENTOS Y CARRUSEL
-                    //           EventDepart(
-                    //             eventModels: eventlistt[index],
-                    //             // press: () {
-                    //             //   Navigator.push(
-                    //             //     context,
-                    //             //     MaterialPageRoute(
-                    //             //       builder: (context) => DetailScreen(
-                    //             //         placeInfo: placesp[index],
-                    //             //       ),
-                    //             //     ),
-                    //             //   );
-                    //             // },
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     );
-                    //   },
-                    // ),
-                    ),
+                      ),
+                    ],
+                  ),
+                ),
                 const SizedBox(
                   height: 30,
                 )

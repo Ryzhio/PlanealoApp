@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event13_la%20libertad/event_models13.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/pages/detailscreen/event_screen/event13_la%20libertad/event_libert1.dart';
@@ -123,111 +122,82 @@ class _DetailDepart13State extends State<DetailDepart13> {
                 ),
                 //EVENTOS
                 SizedBox(
-                    height: 335,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        //EVENT 01
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventLibert1(
-                                  eventModels13: eventlisttlibert.first),
-                            ],
-                          ),
+                  height: 335,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      //EVENT 01
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventLibert1(eventModels13: eventlisttlibert.first),
+                          ],
                         ),
-                        //EVENT 02
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventLibert2(
-                                  eventModelss13: eventlistt1libert.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 02
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventLibert2(
+                                eventModelss13: eventlistt1libert.first),
+                          ],
                         ),
-                        //EVENT 03
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventLibert3(
-                                  eventModelsss13: eventlistt2libert.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 03
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventLibert3(
+                                eventModelsss13: eventlistt2libert.first),
+                          ],
                         ),
-                        //EVENT 04
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventLibert4(
-                                  eventModelssss13: eventlistt3libert.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 04
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventLibert4(
+                                eventModelssss13: eventlistt3libert.first),
+                          ],
                         ),
-                        //EVENT 05
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventLibert5(
-                                  eventModelsssss13: eventlistt4libert.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 05
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventLibert5(
+                                eventModelsssss13: eventlistt4libert.first),
+                          ],
                         ),
-                        //EVENT 06
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventLibert6(
-                                  eventModelssssss13: eventlistt5libert.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 06
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventLibert6(
+                                eventModelssssss13: eventlistt5libert.first),
+                          ],
                         ),
-                        //EVENT 07
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventLibert7(
-                                  eventModelsssssss13: eventlistt6libert.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 07
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventLibert7(
+                                eventModelsssssss13: eventlistt6libert.first),
+                          ],
                         ),
-                      ],
-                    )
-                    // ListView.builder(
-                    //   itemCount: placesp.length,
-                    //   scrollDirection: Axis.horizontal,
-                    //   itemBuilder: (context, index) {
-                    //     return Padding(
-                    //       padding: const EdgeInsets.only(left: 15, right: 15),
-                    //       child: Row(
-                    //         // ignore: prefer_const_literals_to_create_immutables
-                    //         children: [
-                    //           //EVENTOS Y CARRUSEL
-                    //           EventDepart(
-                    //             eventModels: eventlistt[index],
-                    //             // press: () {
-                    //             //   Navigator.push(
-                    //             //     context,
-                    //             //     MaterialPageRoute(
-                    //             //       builder: (context) => DetailScreen(
-                    //             //         placeInfo: placesp[index],
-                    //             //       ),
-                    //             //     ),
-                    //             //   );
-                    //             // },
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     );
-                    //   },
-                    // ),
-                    ),
+                      ),
+                    ],
+                  ),
+                ),
                 const SizedBox(
                   height: 30,
                 )
