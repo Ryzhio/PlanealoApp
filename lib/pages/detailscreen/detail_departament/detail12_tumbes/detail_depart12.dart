@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event12_tumbes/event_models12.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
-import 'package:planealo_app/pages/detailscreen/event_screen/event_piura_screen/event_depart.dart';
-import 'package:planealo_app/pages/detailscreen/event_screen/event_piura_screen/event_pri.dart';
-import 'package:planealo_app/pages/detailscreen/event_screen/event_piura_screen/event_pri1.dart';
-import 'package:planealo_app/pages/detailscreen/event_screen/event_piura_screen/event_pri2.dart';
-import 'package:planealo_app/pages/detailscreen/event_screen/event_piura_screen/event_pri3.dart';
-import 'package:planealo_app/pages/detailscreen/event_screen/event_piura_screen/event_pri4.dart';
-import 'package:planealo_app/pages/detailscreen/event_screen/event_piura_screen/event_pri5.dart';
+import 'package:planealo_app/pages/detailscreen/event_screen/event12_tumbes/event_tumb1.dart';
+import 'package:planealo_app/pages/detailscreen/event_screen/event12_tumbes/event_tumb2.dart';
+import 'package:planealo_app/pages/detailscreen/event_screen/event12_tumbes/event_tumb3.dart';
+import 'package:planealo_app/pages/detailscreen/event_screen/event12_tumbes/event_tumb4.dart';
+import 'package:planealo_app/pages/detailscreen/event_screen/event12_tumbes/event_tumb5.dart';
+import 'package:planealo_app/pages/detailscreen/event_screen/event12_tumbes/event_tumb6.dart';
+import 'package:planealo_app/pages/detailscreen/event_screen/event12_tumbes/event_tumb7.dart';
 import 'package:planealo_app/pages/detailscreen/slider_screen/slider12_tumbes/slider12_screen.dart';
 
 class DetailDepart12 extends StatefulWidget {
@@ -131,7 +132,7 @@ class _DetailDepart12State extends State<DetailDepart12> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventDepart(eventModels: eventlistt.first),
+                              EventTumb1(eventModels12: eventlistttumb.first),
                             ],
                           ),
                         ),
@@ -140,7 +141,7 @@ class _DetailDepart12State extends State<DetailDepart12> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPri(eventModelss: eventlistt1.first),
+                              EventTumb2(eventModelss12: eventlistt1tumb.first),
                             ],
                           ),
                         ),
@@ -149,7 +150,8 @@ class _DetailDepart12State extends State<DetailDepart12> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPri1(eventModelsss: eventlistt2.first),
+                              EventTumb3(
+                                  eventModelsss12: eventlistt2tumb.first),
                             ],
                           ),
                         ),
@@ -158,7 +160,8 @@ class _DetailDepart12State extends State<DetailDepart12> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPri2(eventModelssss: eventlistt3.first),
+                              EventTumb4(
+                                  eventModelssss12: eventlistt3tumb.first),
                             ],
                           ),
                         ),
@@ -167,7 +170,8 @@ class _DetailDepart12State extends State<DetailDepart12> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPri3(eventModelsssss: eventlistt4.first),
+                              EventTumb5(
+                                  eventModelsssss12: eventlistt4tumb.first),
                             ],
                           ),
                         ),
@@ -176,7 +180,8 @@ class _DetailDepart12State extends State<DetailDepart12> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPri4(eventModelssssss: eventlistt5.first),
+                              EventTumb6(
+                                  eventModelssssss12: eventlistt5tumb.first),
                             ],
                           ),
                         ),
@@ -185,7 +190,8 @@ class _DetailDepart12State extends State<DetailDepart12> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPri5(eventModelsssssss: eventlistt6.first),
+                              EventTumb7(
+                                  eventModelsssssss12: eventlistt6tumb.first),
                             ],
                           ),
                         ),

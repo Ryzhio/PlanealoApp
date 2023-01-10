@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event12_tumbes/event_models12.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event.dart';
 
 class EventTumb1 extends StatefulWidget {
-  final EventModels eventModels;
-  const EventTumb1({super.key, required this.eventModels});
+  final EventModels12 eventModels12;
+  const EventTumb1({super.key, required this.eventModels12});
 
   @override
   State<EventTumb1> createState() => _EventTumb1State();
@@ -41,7 +42,7 @@ class _EventTumb1State extends State<EventTumb1> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModels.textListt,
+                  widget.eventModels12.textListttumb,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventTumb1State extends State<EventTumb1> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModels.mesListt,
+                      widget.eventModels12.mesListttumb,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventTumb1State extends State<EventTumb1> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModels.msgListt,
+                      widget.eventModels12.msgListttumb,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

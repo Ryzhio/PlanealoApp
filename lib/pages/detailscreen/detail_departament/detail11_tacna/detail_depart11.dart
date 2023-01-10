@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
+import 'package:planealo_app/models/event_model/event11_tacna/event_models11.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/pages/detailscreen/event_screen/event11_tacna/event_tacna1.dart';
@@ -122,104 +122,81 @@ class _DetailDepart11State extends State<DetailDepart11> {
                 ),
                 //EVENTOS
                 SizedBox(
-                    height: 335,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        //EVENT 01
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTacna1(eventModels: eventlistt.first),
-                            ],
-                          ),
+                  height: 335,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      //EVENT 01
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTacna1(eventModels11: eventlistttacna.first),
+                          ],
                         ),
-                        //EVENT 02
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTacna2(eventModelss: eventlistt1.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 02
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTacna2(eventModelss11: eventlistt1tacna.first),
+                          ],
                         ),
-                        //EVENT 03
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTacna3(eventModelsss: eventlistt2.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 03
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTacna3(
+                                eventModelsss11: eventlistt2tacna.first),
+                          ],
                         ),
-                        //EVENT 04
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTacna4(eventModelssss: eventlistt3.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 04
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTacna4(
+                                eventModelssss11: eventlistt3tacna.first),
+                          ],
                         ),
-                        //EVENT 05
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTacna5(eventModelsssss: eventlistt4.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 05
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTacna5(
+                                eventModelsssss11: eventlistt4tacna.first),
+                          ],
                         ),
-                        //EVENT 06
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTacna6(eventModelssssss: eventlistt5.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 06
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTacna6(
+                                eventModelssssss11: eventlistt5tacna.first),
+                          ],
                         ),
-                        //EVENT 07
-                        Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
-                          child: Row(
-                            children: [
-                              EventTacna7(eventModelsssssss: eventlistt6.first),
-                            ],
-                          ),
+                      ),
+                      //EVENT 07
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          children: [
+                            EventTacna7(
+                                eventModelsssssss11: eventlistt6tacna.first),
+                          ],
                         ),
-                      ],
-                    )
-                    // ListView.builder(
-                    //   itemCount: placesp.length,
-                    //   scrollDirection: Axis.horizontal,
-                    //   itemBuilder: (context, index) {
-                    //     return Padding(
-                    //       padding: const EdgeInsets.only(left: 15, right: 15),
-                    //       child: Row(
-                    //         // ignore: prefer_const_literals_to_create_immutables
-                    //         children: [
-                    //           //EVENTOS Y CARRUSEL
-                    //           EventDepart(
-                    //             eventModels: eventlistt[index],
-                    //             // press: () {
-                    //             //   Navigator.push(
-                    //             //     context,
-                    //             //     MaterialPageRoute(
-                    //             //       builder: (context) => DetailScreen(
-                    //             //         placeInfo: placesp[index],
-                    //             //       ),
-                    //             //     ),
-                    //             //   );
-                    //             // },
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     );
-                    //   },
-                    // ),
-                    ),
+                      ),
+                    ],
+                  ),
+                ),
                 const SizedBox(
                   height: 30,
                 )

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event15_cajamarca/event_models15.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event4.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event4.dart';
 
 class EventCajama4 extends StatefulWidget {
-  final EventModelssss eventModelssss;
-  const EventCajama4({super.key, required this.eventModelssss});
+  final EventModelssss15 eventModelssss15;
+  const EventCajama4({super.key, required this.eventModelssss15});
 
   @override
   State<EventCajama4> createState() => _EventCajama4State();
@@ -41,7 +42,7 @@ class _EventCajama4State extends State<EventCajama4> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelssss.textListt3,
+                  widget.eventModelssss15.textListt3cajama,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventCajama4State extends State<EventCajama4> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssss.mesListt3,
+                      widget.eventModelssss15.mesListt3cajama,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventCajama4State extends State<EventCajama4> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssss.msgListt3,
+                      widget.eventModelssss15.msgListt3cajama,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

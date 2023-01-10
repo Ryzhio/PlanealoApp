@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event13_la%20libertad/event_models13.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
@@ -131,7 +132,8 @@ class _DetailDepart13State extends State<DetailDepart13> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLibert1(eventModels: eventlistt.first),
+                              EventLibert1(
+                                  eventModels13: eventlisttlibert.first),
                             ],
                           ),
                         ),
@@ -140,7 +142,8 @@ class _DetailDepart13State extends State<DetailDepart13> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLibert2(eventModelss: eventlistt1.first),
+                              EventLibert2(
+                                  eventModelss13: eventlistt1libert.first),
                             ],
                           ),
                         ),
@@ -149,7 +152,8 @@ class _DetailDepart13State extends State<DetailDepart13> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLibert3(eventModelsss: eventlistt2.first),
+                              EventLibert3(
+                                  eventModelsss13: eventlistt2libert.first),
                             ],
                           ),
                         ),
@@ -158,7 +162,8 @@ class _DetailDepart13State extends State<DetailDepart13> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLibert4(eventModelssss: eventlistt3.first),
+                              EventLibert4(
+                                  eventModelssss13: eventlistt3libert.first),
                             ],
                           ),
                         ),
@@ -167,7 +172,8 @@ class _DetailDepart13State extends State<DetailDepart13> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLibert5(eventModelsssss: eventlistt4.first),
+                              EventLibert5(
+                                  eventModelsssss13: eventlistt4libert.first),
                             ],
                           ),
                         ),
@@ -176,7 +182,8 @@ class _DetailDepart13State extends State<DetailDepart13> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventLibert6(eventModelssssss: eventlistt5.first),
+                              EventLibert6(
+                                  eventModelssssss13: eventlistt5libert.first),
                             ],
                           ),
                         ),
@@ -186,7 +193,7 @@ class _DetailDepart13State extends State<DetailDepart13> {
                           child: Row(
                             children: [
                               EventLibert7(
-                                  eventModelsssssss: eventlistt6.first),
+                                  eventModelsssssss13: eventlistt6libert.first),
                             ],
                           ),
                         ),

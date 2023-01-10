@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event15_cajamarca/event_models15.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
@@ -131,7 +132,8 @@ class _DetailDepart15State extends State<DetailDepart15> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCajama1(eventModels: eventlistt.first),
+                              EventCajama1(
+                                  eventModels15: eventlisttcajama.first),
                             ],
                           ),
                         ),
@@ -140,7 +142,8 @@ class _DetailDepart15State extends State<DetailDepart15> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCajama2(eventModelss: eventlistt1.first),
+                              EventCajama2(
+                                  eventModelss15: eventlistt1cajama.first),
                             ],
                           ),
                         ),
@@ -149,7 +152,8 @@ class _DetailDepart15State extends State<DetailDepart15> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCajama3(eventModelsss: eventlistt2.first),
+                              EventCajama3(
+                                  eventModelsss15: eventlistt2cajama.first),
                             ],
                           ),
                         ),
@@ -158,7 +162,8 @@ class _DetailDepart15State extends State<DetailDepart15> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCajama4(eventModelssss: eventlistt3.first),
+                              EventCajama4(
+                                  eventModelssss15: eventlistt3cajama.first),
                             ],
                           ),
                         ),
@@ -167,7 +172,8 @@ class _DetailDepart15State extends State<DetailDepart15> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCajama5(eventModelsssss: eventlistt4.first),
+                              EventCajama5(
+                                  eventModelsssss15: eventlistt4cajama.first),
                             ],
                           ),
                         ),
@@ -176,7 +182,8 @@ class _DetailDepart15State extends State<DetailDepart15> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCajama6(eventModelssssss: eventlistt5.first),
+                              EventCajama6(
+                                  eventModelssssss15: eventlistt5cajama.first),
                             ],
                           ),
                         ),
@@ -186,7 +193,7 @@ class _DetailDepart15State extends State<DetailDepart15> {
                           child: Row(
                             children: [
                               EventCajama7(
-                                  eventModelsssssss: eventlistt6.first),
+                                  eventModelsssssss15: eventlistt6cajama.first),
                             ],
                           ),
                         ),

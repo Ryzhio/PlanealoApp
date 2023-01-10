@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
+import 'package:planealo_app/models/event_model/event8_puno/event_models8.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/pages/detailscreen/event_screen/event8_puno/event_puno1.dart';
@@ -131,7 +132,7 @@ class _DetailDepart8State extends State<DetailDepart8> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPuno1(eventModels: eventlistt.first),
+                              EventPuno1(eventModels8: eventlisttpuno.first),
                             ],
                           ),
                         ),
@@ -140,7 +141,7 @@ class _DetailDepart8State extends State<DetailDepart8> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPuno2(eventModelss: eventlistt1.first),
+                              EventPuno2(eventModelss8: eventlistt1puno.first),
                             ],
                           ),
                         ),
@@ -149,7 +150,7 @@ class _DetailDepart8State extends State<DetailDepart8> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPuno3(eventModelsss: eventlistt2.first),
+                              EventPuno3(eventModelsss8: eventlistt2puno.first),
                             ],
                           ),
                         ),
@@ -158,7 +159,8 @@ class _DetailDepart8State extends State<DetailDepart8> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPuno4(eventModelssss: eventlistt3.first),
+                              EventPuno4(
+                                  eventModelssss8: eventlistt3puno.first),
                             ],
                           ),
                         ),
@@ -167,7 +169,8 @@ class _DetailDepart8State extends State<DetailDepart8> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPuno5(eventModelsssss: eventlistt4.first),
+                              EventPuno5(
+                                  eventModelsssss8: eventlistt4puno.first),
                             ],
                           ),
                         ),
@@ -176,7 +179,8 @@ class _DetailDepart8State extends State<DetailDepart8> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPuno6(eventModelssssss: eventlistt5.first),
+                              EventPuno6(
+                                  eventModelssssss8: eventlistt5puno.first),
                             ],
                           ),
                         ),
@@ -185,7 +189,8 @@ class _DetailDepart8State extends State<DetailDepart8> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventPuno7(eventModelsssssss: eventlistt6.first),
+                              EventPuno7(
+                                  eventModelsssssss8: eventlistt6puno.first),
                             ],
                           ),
                         ),

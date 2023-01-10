@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event10_madre%20de%20dios/event_models10.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event3.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event3.dart';
 
 class EventMadre3 extends StatefulWidget {
-  final EventModelsss eventModelsss;
-  const EventMadre3({super.key, required this.eventModelsss});
+  final EventModelsss10 eventModelsss10;
+  const EventMadre3({super.key, required this.eventModelsss10});
 
   @override
   State<EventMadre3> createState() => _EventMadre3State();
@@ -41,7 +42,7 @@ class _EventMadre3State extends State<EventMadre3> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelsss.textListt2,
+                  widget.eventModelsss10.textListt2madre,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventMadre3State extends State<EventMadre3> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsss.mesListt2,
+                      widget.eventModelsss10.mesListt2madre,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventMadre3State extends State<EventMadre3> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsss.msgListt2,
+                      widget.eventModelsss10.msgListt2madre,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

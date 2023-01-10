@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event2.dart';
+import 'package:planealo_app/models/event_model/event7_cusco/event_models7.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event2.dart';
 
 class EventCus2 extends StatefulWidget {
-  final EventModelss eventModelss;
-  const EventCus2({super.key, required this.eventModelss});
+  final EventModelss7 eventModelss7;
+  const EventCus2({super.key, required this.eventModelss7});
 
   @override
   State<EventCus2> createState() => _EventCus2State();
@@ -41,7 +42,7 @@ class _EventCus2State extends State<EventCus2> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelss.textListt1,
+                  widget.eventModelss7.textListt1cus,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventCus2State extends State<EventCus2> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelss.mesListt1,
+                      widget.eventModelss7.mesListt1cus,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventCus2State extends State<EventCus2> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelss.msgListt1,
+                      widget.eventModelss7.msgListt1cus,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

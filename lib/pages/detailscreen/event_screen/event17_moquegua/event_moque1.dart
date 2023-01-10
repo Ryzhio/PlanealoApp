@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event17_moquegua/event_models17.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event.dart';
 
 class EventMoque1 extends StatefulWidget {
-  final EventModels eventModels;
-  const EventMoque1({super.key, required this.eventModels});
+  final EventModels17 eventModels17;
+  const EventMoque1({super.key, required this.eventModels17});
 
   @override
   State<EventMoque1> createState() => _EventMoque1State();
@@ -41,7 +42,7 @@ class _EventMoque1State extends State<EventMoque1> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModels.textListt,
+                  widget.eventModels17.textListtmoque,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventMoque1State extends State<EventMoque1> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModels.mesListt,
+                      widget.eventModels17.mesListtmoque,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventMoque1State extends State<EventMoque1> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModels.msgListt,
+                      widget.eventModels17.msgListtmoque,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

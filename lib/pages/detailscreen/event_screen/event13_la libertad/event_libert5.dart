@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event13_la%20libertad/event_models13.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event5.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event5.dart';
 
 class EventLibert5 extends StatefulWidget {
-  final EventModelsssss eventModelsssss;
-  const EventLibert5({super.key, required this.eventModelsssss});
+  final EventModelsssss13 eventModelsssss13;
+  const EventLibert5({super.key, required this.eventModelsssss13});
 
   @override
   State<EventLibert5> createState() => _EventLibert5State();
@@ -41,7 +42,7 @@ class _EventLibert5State extends State<EventLibert5> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelsssss.textListt4,
+                  widget.eventModelsssss13.textListt4libert,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventLibert5State extends State<EventLibert5> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssss.mesListt4,
+                      widget.eventModelsssss13.mesListt4libert,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventLibert5State extends State<EventLibert5> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssss.msgListt4,
+                      widget.eventModelsssss13.msgListt4libert,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

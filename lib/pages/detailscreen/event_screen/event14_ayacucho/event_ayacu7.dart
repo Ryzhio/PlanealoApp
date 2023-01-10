@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event14_ayacucho/event_models14.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event7.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event7.dart';
 
 class EventAyacu7 extends StatefulWidget {
-  final EventModelsssssss eventModelsssssss;
-  const EventAyacu7({super.key, required this.eventModelsssssss});
+  final EventModelsssssss14 eventModelsssssss14;
+  const EventAyacu7({super.key, required this.eventModelsssssss14});
 
   @override
   State<EventAyacu7> createState() => _EventAyacu7State();
@@ -41,7 +42,7 @@ class _EventAyacu7State extends State<EventAyacu7> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelsssssss.textListt6,
+                  widget.eventModelsssssss14.textListt6ayacu,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventAyacu7State extends State<EventAyacu7> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssssss.mesListt6,
+                      widget.eventModelsssssss14.mesListt6ayacu,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventAyacu7State extends State<EventAyacu7> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssssss.msgListt6,
+                      widget.eventModelsssssss14.msgListt6ayacu,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

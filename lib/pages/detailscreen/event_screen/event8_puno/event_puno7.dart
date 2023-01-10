@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event7.dart';
+import 'package:planealo_app/models/event_model/event8_puno/event_models8.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event7.dart';
 
 class EventPuno7 extends StatefulWidget {
-  final EventModelsssssss eventModelsssssss;
-  const EventPuno7({super.key, required this.eventModelsssssss});
+  final EventModelsssssss8 eventModelsssssss8;
+  const EventPuno7({super.key, required this.eventModelsssssss8});
 
   @override
   State<EventPuno7> createState() => _EventPuno7State();
@@ -41,7 +42,7 @@ class _EventPuno7State extends State<EventPuno7> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelsssssss.textListt6,
+                  widget.eventModelsssssss8.textListt6puno,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventPuno7State extends State<EventPuno7> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssssss.mesListt6,
+                      widget.eventModelsssssss8.mesListt6puno,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventPuno7State extends State<EventPuno7> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssssss.msgListt6,
+                      widget.eventModelsssssss8.msgListt6puno,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event17_moquegua/event_models17.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
@@ -131,7 +132,7 @@ class _DetailDepart17State extends State<DetailDepart17> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventMoque1(eventModels: eventlistt.first),
+                              EventMoque1(eventModels17: eventlisttmoque.first),
                             ],
                           ),
                         ),
@@ -140,7 +141,8 @@ class _DetailDepart17State extends State<DetailDepart17> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventMoque2(eventModelss: eventlistt1.first),
+                              EventMoque2(
+                                  eventModelss17: eventlistt1moque.first),
                             ],
                           ),
                         ),
@@ -149,7 +151,8 @@ class _DetailDepart17State extends State<DetailDepart17> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventMoque3(eventModelsss: eventlistt2.first),
+                              EventMoque3(
+                                  eventModelsss17: eventlistt2moque.first),
                             ],
                           ),
                         ),
@@ -158,7 +161,8 @@ class _DetailDepart17State extends State<DetailDepart17> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventMoque4(eventModelssss: eventlistt3.first),
+                              EventMoque4(
+                                  eventModelssss17: eventlistt3moque.first),
                             ],
                           ),
                         ),
@@ -167,7 +171,8 @@ class _DetailDepart17State extends State<DetailDepart17> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventMoque5(eventModelsssss: eventlistt4.first),
+                              EventMoque5(
+                                  eventModelsssss17: eventlistt4moque.first),
                             ],
                           ),
                         ),
@@ -176,7 +181,8 @@ class _DetailDepart17State extends State<DetailDepart17> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventMoque6(eventModelssssss: eventlistt5.first),
+                              EventMoque6(
+                                  eventModelssssss17: eventlistt5moque.first),
                             ],
                           ),
                         ),
@@ -185,7 +191,8 @@ class _DetailDepart17State extends State<DetailDepart17> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventMoque7(eventModelsssssss: eventlistt6.first),
+                              EventMoque7(
+                                  eventModelsssssss17: eventlistt6moque.first),
                             ],
                           ),
                         ),

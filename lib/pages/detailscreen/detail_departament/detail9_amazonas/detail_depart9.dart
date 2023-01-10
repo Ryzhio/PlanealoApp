@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
+import 'package:planealo_app/models/event_model/event9_amazonas/event_models9.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/pages/detailscreen/event_screen/event9_amazonas/event_amazo1.dart';
@@ -131,7 +132,7 @@ class _DetailDepart9State extends State<DetailDepart9> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAmazo1(eventModels: eventlistt.first),
+                              EventAmazo1(eventModels9: eventlisttamazo.first),
                             ],
                           ),
                         ),
@@ -140,7 +141,8 @@ class _DetailDepart9State extends State<DetailDepart9> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAmazo2(eventModelss: eventlistt1.first),
+                              EventAmazo2(
+                                  eventModelss9: eventlistt1amazo.first),
                             ],
                           ),
                         ),
@@ -149,7 +151,8 @@ class _DetailDepart9State extends State<DetailDepart9> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAmazo3(eventModelsss: eventlistt2.first),
+                              EventAmazo3(
+                                  eventModelsss9: eventlistt2amazo.first),
                             ],
                           ),
                         ),
@@ -158,7 +161,8 @@ class _DetailDepart9State extends State<DetailDepart9> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAmazo4(eventModelssss: eventlistt3.first),
+                              EventAmazo4(
+                                  eventModelssss9: eventlistt3amazo.first),
                             ],
                           ),
                         ),
@@ -167,7 +171,8 @@ class _DetailDepart9State extends State<DetailDepart9> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAmazo5(eventModelsssss: eventlistt4.first),
+                              EventAmazo5(
+                                  eventModelsssss9: eventlistt4amazo.first),
                             ],
                           ),
                         ),
@@ -176,7 +181,8 @@ class _DetailDepart9State extends State<DetailDepart9> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAmazo6(eventModelssssss: eventlistt5.first),
+                              EventAmazo6(
+                                  eventModelssssss9: eventlistt5amazo.first),
                             ],
                           ),
                         ),
@@ -185,7 +191,8 @@ class _DetailDepart9State extends State<DetailDepart9> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAmazo7(eventModelsssssss: eventlistt6.first),
+                              EventAmazo7(
+                                  eventModelsssssss9: eventlistt6amazo.first),
                             ],
                           ),
                         ),

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event5.dart';
+import 'package:planealo_app/models/event_model/event9_amazonas/event_models9.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event5.dart';
 
 class EventAmazo5 extends StatefulWidget {
-  final EventModelsssss eventModelsssss;
-  const EventAmazo5({super.key, required this.eventModelsssss});
+  final EventModelsssss9 eventModelsssss9;
+  const EventAmazo5({super.key, required this.eventModelsssss9});
 
   @override
   State<EventAmazo5> createState() => _EventAmazo5State();
@@ -41,7 +42,7 @@ class _EventAmazo5State extends State<EventAmazo5> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelsssss.textListt4,
+                  widget.eventModelsssss9.textListt4amazo,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventAmazo5State extends State<EventAmazo5> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssss.mesListt4,
+                      widget.eventModelsssss9.mesListt4amazo,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventAmazo5State extends State<EventAmazo5> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssss.msgListt4,
+                      widget.eventModelsssss9.msgListt4amazo,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

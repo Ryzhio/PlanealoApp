@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event18_ancash/event_models18.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
@@ -131,7 +132,8 @@ class _DetailDepart18State extends State<DetailDepart18> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAncash1(eventModels: eventlistt.first),
+                              EventAncash1(
+                                  eventModels18: eventlisttancash.first),
                             ],
                           ),
                         ),
@@ -140,7 +142,8 @@ class _DetailDepart18State extends State<DetailDepart18> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAncash2(eventModelss: eventlistt1.first),
+                              EventAncash2(
+                                  eventModelss18: eventlistt1ancash.first),
                             ],
                           ),
                         ),
@@ -149,7 +152,8 @@ class _DetailDepart18State extends State<DetailDepart18> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAncash3(eventModelsss: eventlistt2.first),
+                              EventAncash3(
+                                  eventModelsss18: eventlistt2ancash.first),
                             ],
                           ),
                         ),
@@ -158,7 +162,8 @@ class _DetailDepart18State extends State<DetailDepart18> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAncash4(eventModelssss: eventlistt3.first),
+                              EventAncash4(
+                                  eventModelssss18: eventlistt3ancash.first),
                             ],
                           ),
                         ),
@@ -167,7 +172,8 @@ class _DetailDepart18State extends State<DetailDepart18> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAncash5(eventModelsssss: eventlistt4.first),
+                              EventAncash5(
+                                  eventModelsssss18: eventlistt4ancash.first),
                             ],
                           ),
                         ),
@@ -176,7 +182,8 @@ class _DetailDepart18State extends State<DetailDepart18> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventAncash6(eventModelssssss: eventlistt5.first),
+                              EventAncash6(
+                                  eventModelssssss18: eventlistt5ancash.first),
                             ],
                           ),
                         ),
@@ -186,7 +193,7 @@ class _DetailDepart18State extends State<DetailDepart18> {
                           child: Row(
                             children: [
                               EventAncash7(
-                                  eventModelsssssss: eventlistt6.first),
+                                  eventModelsssssss18: eventlistt6ancash.first),
                             ],
                           ),
                         ),

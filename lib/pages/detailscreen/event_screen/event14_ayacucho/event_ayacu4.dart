@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event14_ayacucho/event_models14.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event4.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event4.dart';
 
 class EventAyacu4 extends StatefulWidget {
-  final EventModelssss eventModelssss;
-  const EventAyacu4({super.key, required this.eventModelssss});
+  final EventModelssss14 eventModelssss14;
+  const EventAyacu4({super.key, required this.eventModelssss14});
 
   @override
   State<EventAyacu4> createState() => _EventAyacu4State();
@@ -41,7 +42,7 @@ class _EventAyacu4State extends State<EventAyacu4> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelssss.textListt3,
+                  widget.eventModelssss14.textListt3ayacu,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventAyacu4State extends State<EventAyacu4> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssss.mesListt3,
+                      widget.eventModelssss14.mesListt3ayacu,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventAyacu4State extends State<EventAyacu4> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssss.msgListt3,
+                      widget.eventModelssss14.msgListt3ayacu,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

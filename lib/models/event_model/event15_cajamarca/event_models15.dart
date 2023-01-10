@@ -1,21 +1,21 @@
 //EVENT 01
-class EventModels {
-  final List fileNme;
-  final String msgListt;
-  final String textListt;
-  final String mesListt;
+class EventModels15 {
+  final List fileNmecajama;
+  final String msgListtcajama;
+  final String textListtcajama;
+  final String mesListtcajama;
 
-  EventModels({
-    required this.fileNme,
-    required this.msgListt,
-    required this.textListt,
-    required this.mesListt,
+  EventModels15({
+    required this.fileNmecajama,
+    required this.msgListtcajama,
+    required this.textListtcajama,
+    required this.mesListtcajama,
   });
 }
 
-List eventlistt = [
-  EventModels(
-    fileNme: [
+List eventlisttcajama = [
+  EventModels15(
+    fileNmecajama: [
       'assets/carna3.jpg',
       'assets/carna6.jpg',
       'assets/carna2.jpg',
@@ -24,30 +24,30 @@ List eventlistt = [
       'assets/carna1.jpg',
       'assets/carna7.jpg',
     ],
-    msgListt: 'Piura, Catacaos',
-    textListt: 'Carnavales',
-    mesListt: 'Enero',
+    msgListtcajama: 'Piura, Catacaos',
+    textListtcajama: 'Carnavales',
+    mesListtcajama: 'Enero',
   ),
 ];
 
 //EVENT 02
-class EventModelss {
-  final List<String> fileNme1;
-  final String msgListt1;
-  final String textListt1;
-  final String mesListt1;
+class EventModelss15 {
+  final List<String> fileNme1cajama;
+  final String msgListt1cajama;
+  final String textListt1cajama;
+  final String mesListt1cajama;
 
-  EventModelss({
-    required this.fileNme1,
-    required this.msgListt1,
-    required this.textListt1,
-    required this.mesListt1,
+  EventModelss15({
+    required this.fileNme1cajama,
+    required this.msgListt1cajama,
+    required this.textListt1cajama,
+    required this.mesListt1cajama,
   });
 }
 
-List<dynamic> eventlistt1 = [
-  EventModelss(
-    fileNme1: [
+List<dynamic> eventlistt1cajama = [
+  EventModelss15(
+    fileNme1cajama: [
       'assets/tala1.jpg',
       'assets/tala2.jpg',
       'assets/tala3.jpg',
@@ -56,30 +56,30 @@ List<dynamic> eventlistt1 = [
       'assets/tala6.jpg',
       'assets/tala7.jpg',
     ],
-    msgListt1: 'Piura',
-    textListt1: 'Semana de Talara y Feria',
-    mesListt1: 'Marzo',
+    msgListt1cajama: 'Piura',
+    textListt1cajama: 'Semana de Talara y Feria',
+    mesListt1cajama: 'Marzo',
   ),
 ];
 
 //EVENT 03
-class EventModelsss {
-  final List<String> fileNme2;
-  final String msgListt2;
-  final String textListt2;
-  final String mesListt2;
+class EventModelsss15 {
+  final List<String> fileNme2cajama;
+  final String msgListt2cajama;
+  final String textListt2cajama;
+  final String mesListt2cajama;
 
-  EventModelsss({
-    required this.fileNme2,
-    required this.msgListt2,
-    required this.textListt2,
-    required this.mesListt2,
+  EventModelsss15({
+    required this.fileNme2cajama,
+    required this.msgListt2cajama,
+    required this.textListt2cajama,
+    required this.mesListt2cajama,
   });
 }
 
-List<dynamic> eventlistt2 = [
-  EventModelsss(
-    fileNme2: [
+List<dynamic> eventlistt2cajama = [
+  EventModelsss15(
+    fileNme2cajama: [
       'assets/yun7.jpg',
       'assets/yun5.jpg',
       'assets/yun2.jpg',
@@ -88,30 +88,30 @@ List<dynamic> eventlistt2 = [
       'assets/yun6.jpg',
       'assets/yun4.jpg',
     ],
-    msgListt2: 'Piura, Catacaos',
-    textListt2: 'Yunzas',
-    mesListt2: 'Enero',
+    msgListt2cajama: 'Piura, Catacaos',
+    textListt2cajama: 'Yunzas',
+    mesListt2cajama: 'Enero',
   ),
 ];
 
 //EVENT 04
-class EventModelssss {
-  final List<String> fileNme3;
-  final String msgListt3;
-  final String textListt3;
-  final String mesListt3;
+class EventModelssss15 {
+  final List<String> fileNme3cajama;
+  final String msgListt3cajama;
+  final String textListt3cajama;
+  final String mesListt3cajama;
 
-  EventModelssss({
-    required this.fileNme3,
-    required this.msgListt3,
-    required this.textListt3,
-    required this.mesListt3,
+  EventModelssss15({
+    required this.fileNme3cajama,
+    required this.msgListt3cajama,
+    required this.textListt3cajama,
+    required this.mesListt3cajama,
   });
 }
 
-List<dynamic> eventlistt3 = [
-  EventModelssss(
-    fileNme3: [
+List<dynamic> eventlistt3cajama = [
+  EventModelssss15(
+    fileNme3cajama: [
       'assets/cauti1.jpg',
       'assets/cauti2.jpg',
       'assets/cauti3.jpg',
@@ -120,30 +120,30 @@ List<dynamic> eventlistt3 = [
       'assets/cauti5.jpg',
       'assets/cauti6.jpg',
     ],
-    msgListt3: 'Piura, Ayabaca',
-    textListt3: 'Señor Cautivo de Ayabaca',
-    mesListt3: 'Noviembre',
+    msgListt3cajama: 'Piura, Ayabaca',
+    textListt3cajama: 'Señor Cautivo de Ayabaca',
+    mesListt3cajama: 'Noviembre',
   ),
 ];
 
 //EVENT 05
-class EventModelsssss {
-  final List<String> fileNme4;
-  final String msgListt4;
-  final String textListt4;
-  final String mesListt4;
+class EventModelsssss15 {
+  final List<String> fileNme4cajama;
+  final String msgListt4cajama;
+  final String textListt4cajama;
+  final String mesListt4cajama;
 
-  EventModelsssss({
-    required this.fileNme4,
-    required this.msgListt4,
-    required this.textListt4,
-    required this.mesListt4,
+  EventModelsssss15({
+    required this.fileNme4cajama,
+    required this.msgListt4cajama,
+    required this.textListt4cajama,
+    required this.mesListt4cajama,
   });
 }
 
-List<dynamic> eventlistt4 = [
-  EventModelsssss(
-    fileNme4: [
+List<dynamic> eventlistt4cajama = [
+  EventModelsssss15(
+    fileNme4cajama: [
       'assets/merce1.jpg',
       'assets/merce2.jpg',
       'assets/merce3.jpg',
@@ -152,30 +152,30 @@ List<dynamic> eventlistt4 = [
       'assets/merce6.jpg',
       'assets/merce7.jpg',
     ],
-    msgListt4: 'Piura, Paita',
-    textListt4: 'Virgen de las Mercedes',
-    mesListt4: 'Setiembre',
+    msgListt4cajama: 'Piura, Paita',
+    textListt4cajama: 'Virgen de las Mercedes',
+    mesListt4cajama: 'Setiembre',
   ),
 ];
 
 //EVENT 06
-class EventModelssssss {
-  final List<String> fileNme5;
-  final String msgListt5;
-  final String textListt5;
-  final String mesListt5;
+class EventModelssssss15 {
+  final List<String> fileNme5cajama;
+  final String msgListt5cajama;
+  final String textListt5cajama;
+  final String mesListt5cajama;
 
-  EventModelssssss({
-    required this.fileNme5,
-    required this.msgListt5,
-    required this.textListt5,
-    required this.mesListt5,
+  EventModelssssss15({
+    required this.fileNme5cajama,
+    required this.msgListt5cajama,
+    required this.textListt5cajama,
+    required this.mesListt5cajama,
   });
 }
 
-List<dynamic> eventlistt5 = [
-  EventModelssssss(
-    fileNme5: [
+List<dynamic> eventlistt5cajama = [
+  EventModelssssss15(
+    fileNme5cajama: [
       'assets/anip1.jpg',
       'assets/anip2.jpg',
       'assets/anip3.jpg',
@@ -184,30 +184,30 @@ List<dynamic> eventlistt5 = [
       'assets/anip6.jpg',
       'assets/anip7.jpg',
     ],
-    msgListt5: 'Piura, Piura',
-    textListt5: 'Aniversario de Piura',
-    mesListt5: 'Agosto',
+    msgListt5cajama: 'Piura, Piura',
+    textListt5cajama: 'Aniversario de Piura',
+    mesListt5cajama: 'Agosto',
   ),
 ];
 
 //EVENT 07
-class EventModelsssssss {
-  final List<String> fileNme6;
-  final String msgListt6;
-  final String textListt6;
-  final String mesListt6;
+class EventModelsssssss15 {
+  final List<String> fileNme6cajama;
+  final String msgListt6cajama;
+  final String textListt6cajama;
+  final String mesListt6cajama;
 
-  EventModelsssssss({
-    required this.fileNme6,
-    required this.msgListt6,
-    required this.textListt6,
-    required this.mesListt6,
+  EventModelsssssss15({
+    required this.fileNme6cajama,
+    required this.msgListt6cajama,
+    required this.textListt6cajama,
+    required this.mesListt6cajama,
   });
 }
 
-List<dynamic> eventlistt6 = [
-  EventModelsssssss(
-    fileNme6: [
+List<dynamic> eventlistt6cajama = [
+  EventModelsssssss15(
+    fileNme6cajama: [
       'assets/santa1.jpg',
       'assets/santa2.jpg',
       'assets/santa3.jpg',
@@ -216,8 +216,8 @@ List<dynamic> eventlistt6 = [
       'assets/santa6.jpg',
       'assets/santa7.jpg',
     ],
-    msgListt6: 'Piura, Huancabamba',
-    textListt6: 'Semana Santa',
-    mesListt6: 'Abril',
+    msgListt6cajama: 'Piura, Huancabamba',
+    textListt6cajama: 'Semana Santa',
+    mesListt6cajama: 'Abril',
   )
 ];

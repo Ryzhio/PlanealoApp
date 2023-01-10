@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event.dart';
+import 'package:planealo_app/models/event_model/event8_puno/event_models8.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event.dart';
 
 class EventPuno1 extends StatefulWidget {
-  final EventModels eventModels;
-  const EventPuno1({super.key, required this.eventModels});
+  final EventModels8 eventModels8;
+  const EventPuno1({super.key, required this.eventModels8});
 
   @override
   State<EventPuno1> createState() => _EventPuno1State();
@@ -41,7 +42,7 @@ class _EventPuno1State extends State<EventPuno1> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModels.textListt,
+                  widget.eventModels8.textListtpuno,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventPuno1State extends State<EventPuno1> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModels.mesListt,
+                      widget.eventModels8.mesListtpuno,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventPuno1State extends State<EventPuno1> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModels.msgListt,
+                      widget.eventModels8.msgListtpuno,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

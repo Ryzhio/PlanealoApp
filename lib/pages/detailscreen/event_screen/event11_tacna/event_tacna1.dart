@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event11_tacna/event_models11.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event.dart';
 
 class EventTacna1 extends StatefulWidget {
-  final EventModels eventModels;
-  const EventTacna1({super.key, required this.eventModels});
+  final EventModels11 eventModels11;
+  const EventTacna1({super.key, required this.eventModels11});
 
   @override
   State<EventTacna1> createState() => _EventTacna1State();
@@ -41,7 +42,7 @@ class _EventTacna1State extends State<EventTacna1> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModels.textListt,
+                  widget.eventModels11.textListttacna,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventTacna1State extends State<EventTacna1> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModels.mesListt,
+                      widget.eventModels11.mesListttacna,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventTacna1State extends State<EventTacna1> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModels.msgListt,
+                      widget.eventModels11.msgListttacna,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

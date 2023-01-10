@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
+import 'package:planealo_app/models/event_model/event7_cusco/event_models7.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
 import 'package:planealo_app/pages/detailscreen/event_screen/event7_cusco/event_cus1.dart';
@@ -131,7 +132,7 @@ class _DetailDepart7State extends State<DetailDepart7> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCus1(eventModels: eventlistt.first),
+                              EventCus1(eventModels7: eventlisttcus.first),
                             ],
                           ),
                         ),
@@ -140,7 +141,7 @@ class _DetailDepart7State extends State<DetailDepart7> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCus2(eventModelss: eventlistt1.first),
+                              EventCus2(eventModelss7: eventlistt1cus.first),
                             ],
                           ),
                         ),
@@ -149,7 +150,7 @@ class _DetailDepart7State extends State<DetailDepart7> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCus3(eventModelsss: eventlistt2.first),
+                              EventCus3(eventModelsss7: eventlistt2cus.first),
                             ],
                           ),
                         ),
@@ -158,7 +159,7 @@ class _DetailDepart7State extends State<DetailDepart7> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCus4(eventModelssss: eventlistt3.first),
+                              EventCus4(eventModelssss7: eventlistt3cus.first),
                             ],
                           ),
                         ),
@@ -167,7 +168,7 @@ class _DetailDepart7State extends State<DetailDepart7> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCus5(eventModelsssss: eventlistt4.first),
+                              EventCus5(eventModelsssss7: eventlistt4cus.first),
                             ],
                           ),
                         ),
@@ -176,7 +177,8 @@ class _DetailDepart7State extends State<DetailDepart7> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCus6(eventModelssssss: eventlistt5.first),
+                              EventCus6(
+                                  eventModelssssss7: eventlistt5cus.first),
                             ],
                           ),
                         ),
@@ -185,7 +187,8 @@ class _DetailDepart7State extends State<DetailDepart7> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventCus7(eventModelsssssss: eventlistt6.first),
+                              EventCus7(
+                                  eventModelsssssss7: eventlistt6cus.first),
                             ],
                           ),
                         ),

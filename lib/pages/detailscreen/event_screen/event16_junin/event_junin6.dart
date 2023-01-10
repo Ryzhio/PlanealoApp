@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event16_junin/event_models16.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event6.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event6.dart';
 
 class EventJunin6 extends StatefulWidget {
-  final EventModelssssss eventModelssssss;
-  const EventJunin6({super.key, required this.eventModelssssss});
+  final EventModelssssss16 eventModelssssss16;
+  const EventJunin6({super.key, required this.eventModelssssss16});
 
   @override
   State<EventJunin6> createState() => _EventJunin6State();
@@ -41,7 +42,7 @@ class _EventJunin6State extends State<EventJunin6> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelssssss.textListt5,
+                  widget.eventModelssssss16.textListt5junin,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventJunin6State extends State<EventJunin6> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssssss.mesListt5,
+                      widget.eventModelssssss16.mesListt5junin,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventJunin6State extends State<EventJunin6> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssssss.msgListt5,
+                      widget.eventModelssssss16.msgListt5junin,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

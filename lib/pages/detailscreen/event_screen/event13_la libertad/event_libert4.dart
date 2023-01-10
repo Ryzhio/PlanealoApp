@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event13_la%20libertad/event_models13.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event4.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event4.dart';
 
 class EventLibert4 extends StatefulWidget {
-  final EventModelssss eventModelssss;
-  const EventLibert4({super.key, required this.eventModelssss});
+  final EventModelssss13 eventModelssss13;
+  const EventLibert4({super.key, required this.eventModelssss13});
 
   @override
   State<EventLibert4> createState() => _EventLibert4State();
@@ -41,7 +42,7 @@ class _EventLibert4State extends State<EventLibert4> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelssss.textListt3,
+                  widget.eventModelssss13.textListt3libert,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventLibert4State extends State<EventLibert4> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssss.mesListt3,
+                      widget.eventModelssss13.mesListt3libert,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventLibert4State extends State<EventLibert4> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssss.msgListt3,
+                      widget.eventModelssss13.msgListt3libert,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

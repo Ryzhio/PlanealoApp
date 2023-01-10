@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event18_ancash/event_models18.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event7.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event7.dart';
 
 class EventAncash7 extends StatefulWidget {
-  final EventModelsssssss eventModelsssssss;
-  const EventAncash7({super.key, required this.eventModelsssssss});
+  final EventModelsssssss18 eventModelsssssss18;
+  const EventAncash7({super.key, required this.eventModelsssssss18});
 
   @override
   State<EventAncash7> createState() => _EventAncash7State();
@@ -41,7 +42,7 @@ class _EventAncash7State extends State<EventAncash7> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelsssssss.textListt6,
+                  widget.eventModelsssssss18.textListt6ancash,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventAncash7State extends State<EventAncash7> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssssss.mesListt6,
+                      widget.eventModelsssssss18.mesListt6ancash,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventAncash7State extends State<EventAncash7> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssssss.msgListt6,
+                      widget.eventModelsssssss18.msgListt6ancash,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

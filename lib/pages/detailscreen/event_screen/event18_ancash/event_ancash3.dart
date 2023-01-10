@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event18_ancash/event_models18.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event3.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event3.dart';
 
 class EventAncash3 extends StatefulWidget {
-  final EventModelsss eventModelsss;
-  const EventAncash3({super.key, required this.eventModelsss});
+  final EventModelsss18 eventModelsss18;
+  const EventAncash3({super.key, required this.eventModelsss18});
 
   @override
   State<EventAncash3> createState() => _EventAncash3State();
@@ -41,7 +42,7 @@ class _EventAncash3State extends State<EventAncash3> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelsss.textListt2,
+                  widget.eventModelsss18.textListt2ancash,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventAncash3State extends State<EventAncash3> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsss.mesListt2,
+                      widget.eventModelsss18.mesListt2ancash,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventAncash3State extends State<EventAncash3> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsss.msgListt2,
+                      widget.eventModelsss18.msgListt2ancash,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event6.dart';
+import 'package:planealo_app/models/event_model/event7_cusco/event_models7.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event6.dart';
 
 class EventCus6 extends StatefulWidget {
-  final EventModelssssss eventModelssssss;
-  const EventCus6({super.key, required this.eventModelssssss});
+  final EventModelssssss7 eventModelssssss7;
+  const EventCus6({super.key, required this.eventModelssssss7});
 
   @override
   State<EventCus6> createState() => _EventCus6State();
@@ -41,7 +42,7 @@ class _EventCus6State extends State<EventCus6> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelssssss.textListt5,
+                  widget.eventModelssssss7.textListt5cus,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventCus6State extends State<EventCus6> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssssss.mesListt5,
+                      widget.eventModelssssss7.mesListt5cus,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventCus6State extends State<EventCus6> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelssssss.msgListt5,
+                      widget.eventModelssssss7.msgListt5cus,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

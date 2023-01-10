@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel_piura/carrousel_screen_event7.dart';
+import 'package:planealo_app/models/event_model/event9_amazonas/event_models9.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event7.dart';
 
 class EventAmazo7 extends StatefulWidget {
-  final EventModelsssssss eventModelsssssss;
-  const EventAmazo7({super.key, required this.eventModelsssssss});
+  final EventModelsssssss9 eventModelsssssss9;
+  const EventAmazo7({super.key, required this.eventModelsssssss9});
 
   @override
   State<EventAmazo7> createState() => _EventAmazo7State();
@@ -41,7 +42,7 @@ class _EventAmazo7State extends State<EventAmazo7> {
                   height: 20,
                 ),
                 Text(
-                  widget.eventModelsssssss.textListt6,
+                  widget.eventModelsssssss9.textListt6amazo,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class _EventAmazo7State extends State<EventAmazo7> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssssss.mesListt6,
+                      widget.eventModelsssssss9.mesListt6amazo,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,
@@ -83,7 +84,7 @@ class _EventAmazo7State extends State<EventAmazo7> {
                       width: 10,
                     ),
                     Text(
-                      widget.eventModelsssssss.msgListt6,
+                      widget.eventModelsssssss9.msgListt6amazo,
                       style: const TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 15,

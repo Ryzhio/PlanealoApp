@@ -1,21 +1,21 @@
 //EVENT 01
-class EventModels {
-  final List fileNme;
-  final String msgListt;
-  final String textListt;
-  final String mesListt;
+class EventModels9 {
+  final List fileNmeamazo;
+  final String msgListtamazo;
+  final String textListtamazo;
+  final String mesListtamazo;
 
-  EventModels({
-    required this.fileNme,
-    required this.msgListt,
-    required this.textListt,
-    required this.mesListt,
+  EventModels9({
+    required this.fileNmeamazo,
+    required this.msgListtamazo,
+    required this.textListtamazo,
+    required this.mesListtamazo,
   });
 }
 
-List eventlistt = [
-  EventModels(
-    fileNme: [
+List eventlisttamazo = [
+  EventModels9(
+    fileNmeamazo: [
       'assets/carna3.jpg',
       'assets/carna6.jpg',
       'assets/carna2.jpg',
@@ -24,30 +24,30 @@ List eventlistt = [
       'assets/carna1.jpg',
       'assets/carna7.jpg',
     ],
-    msgListt: 'Piura, Catacaos',
-    textListt: 'Carnavales',
-    mesListt: 'Enero',
+    msgListtamazo: 'Piura, Catacaos',
+    textListtamazo: 'Carnavales',
+    mesListtamazo: 'Enero',
   ),
 ];
 
 //EVENT 02
-class EventModelss {
-  final List<String> fileNme1;
-  final String msgListt1;
-  final String textListt1;
-  final String mesListt1;
+class EventModelss9 {
+  final List<String> fileNme1amazo;
+  final String msgListt1amazo;
+  final String textListt1amazo;
+  final String mesListt1amazo;
 
-  EventModelss({
-    required this.fileNme1,
-    required this.msgListt1,
-    required this.textListt1,
-    required this.mesListt1,
+  EventModelss9({
+    required this.fileNme1amazo,
+    required this.msgListt1amazo,
+    required this.textListt1amazo,
+    required this.mesListt1amazo,
   });
 }
 
-List<dynamic> eventlistt1 = [
-  EventModelss(
-    fileNme1: [
+List<dynamic> eventlistt1amazo = [
+  EventModelss9(
+    fileNme1amazo: [
       'assets/tala1.jpg',
       'assets/tala2.jpg',
       'assets/tala3.jpg',
@@ -56,30 +56,30 @@ List<dynamic> eventlistt1 = [
       'assets/tala6.jpg',
       'assets/tala7.jpg',
     ],
-    msgListt1: 'Piura',
-    textListt1: 'Semana de Talara y Feria',
-    mesListt1: 'Marzo',
+    msgListt1amazo: 'Piura',
+    textListt1amazo: 'Semana de Talara y Feria',
+    mesListt1amazo: 'Marzo',
   ),
 ];
 
 //EVENT 03
-class EventModelsss {
-  final List<String> fileNme2;
-  final String msgListt2;
-  final String textListt2;
-  final String mesListt2;
+class EventModelsss9 {
+  final List<String> fileNme2amazo;
+  final String msgListt2amazo;
+  final String textListt2amazo;
+  final String mesListt2amazo;
 
-  EventModelsss({
-    required this.fileNme2,
-    required this.msgListt2,
-    required this.textListt2,
-    required this.mesListt2,
+  EventModelsss9({
+    required this.fileNme2amazo,
+    required this.msgListt2amazo,
+    required this.textListt2amazo,
+    required this.mesListt2amazo,
   });
 }
 
-List<dynamic> eventlistt2 = [
-  EventModelsss(
-    fileNme2: [
+List<dynamic> eventlistt2amazo = [
+  EventModelsss9(
+    fileNme2amazo: [
       'assets/yun7.jpg',
       'assets/yun5.jpg',
       'assets/yun2.jpg',
@@ -88,30 +88,30 @@ List<dynamic> eventlistt2 = [
       'assets/yun6.jpg',
       'assets/yun4.jpg',
     ],
-    msgListt2: 'Piura, Catacaos',
-    textListt2: 'Yunzas',
-    mesListt2: 'Enero',
+    msgListt2amazo: 'Piura, Catacaos',
+    textListt2amazo: 'Yunzas',
+    mesListt2amazo: 'Enero',
   ),
 ];
 
 //EVENT 04
-class EventModelssss {
-  final List<String> fileNme3;
-  final String msgListt3;
-  final String textListt3;
-  final String mesListt3;
+class EventModelssss9 {
+  final List<String> fileNme3amazo;
+  final String msgListt3amazo;
+  final String textListt3amazo;
+  final String mesListt3amazo;
 
-  EventModelssss({
-    required this.fileNme3,
-    required this.msgListt3,
-    required this.textListt3,
-    required this.mesListt3,
+  EventModelssss9({
+    required this.fileNme3amazo,
+    required this.msgListt3amazo,
+    required this.textListt3amazo,
+    required this.mesListt3amazo,
   });
 }
 
-List<dynamic> eventlistt3 = [
-  EventModelssss(
-    fileNme3: [
+List<dynamic> eventlistt3amazo = [
+  EventModelssss9(
+    fileNme3amazo: [
       'assets/cauti1.jpg',
       'assets/cauti2.jpg',
       'assets/cauti3.jpg',
@@ -120,30 +120,30 @@ List<dynamic> eventlistt3 = [
       'assets/cauti5.jpg',
       'assets/cauti6.jpg',
     ],
-    msgListt3: 'Piura, Ayabaca',
-    textListt3: 'Señor Cautivo de Ayabaca',
-    mesListt3: 'Noviembre',
+    msgListt3amazo: 'Piura, Ayabaca',
+    textListt3amazo: 'Señor Cautivo de Ayabaca',
+    mesListt3amazo: 'Noviembre',
   ),
 ];
 
 //EVENT 05
-class EventModelsssss {
-  final List<String> fileNme4;
-  final String msgListt4;
-  final String textListt4;
-  final String mesListt4;
+class EventModelsssss9 {
+  final List<String> fileNme4amazo;
+  final String msgListt4amazo;
+  final String textListt4amazo;
+  final String mesListt4amazo;
 
-  EventModelsssss({
-    required this.fileNme4,
-    required this.msgListt4,
-    required this.textListt4,
-    required this.mesListt4,
+  EventModelsssss9({
+    required this.fileNme4amazo,
+    required this.msgListt4amazo,
+    required this.textListt4amazo,
+    required this.mesListt4amazo,
   });
 }
 
-List<dynamic> eventlistt4 = [
-  EventModelsssss(
-    fileNme4: [
+List<dynamic> eventlistt4amazo = [
+  EventModelsssss9(
+    fileNme4amazo: [
       'assets/merce1.jpg',
       'assets/merce2.jpg',
       'assets/merce3.jpg',
@@ -152,30 +152,30 @@ List<dynamic> eventlistt4 = [
       'assets/merce6.jpg',
       'assets/merce7.jpg',
     ],
-    msgListt4: 'Piura, Paita',
-    textListt4: 'Virgen de las Mercedes',
-    mesListt4: 'Setiembre',
+    msgListt4amazo: 'Piura, Paita',
+    textListt4amazo: 'Virgen de las Mercedes',
+    mesListt4amazo: 'Setiembre',
   ),
 ];
 
 //EVENT 06
-class EventModelssssss {
-  final List<String> fileNme5;
-  final String msgListt5;
-  final String textListt5;
-  final String mesListt5;
+class EventModelssssss9 {
+  final List<String> fileNme5amazo;
+  final String msgListt5amazo;
+  final String textListt5amazo;
+  final String mesListt5amazo;
 
-  EventModelssssss({
-    required this.fileNme5,
-    required this.msgListt5,
-    required this.textListt5,
-    required this.mesListt5,
+  EventModelssssss9({
+    required this.fileNme5amazo,
+    required this.msgListt5amazo,
+    required this.textListt5amazo,
+    required this.mesListt5amazo,
   });
 }
 
-List<dynamic> eventlistt5 = [
-  EventModelssssss(
-    fileNme5: [
+List<dynamic> eventlistt5amazo = [
+  EventModelssssss9(
+    fileNme5amazo: [
       'assets/anip1.jpg',
       'assets/anip2.jpg',
       'assets/anip3.jpg',
@@ -184,30 +184,30 @@ List<dynamic> eventlistt5 = [
       'assets/anip6.jpg',
       'assets/anip7.jpg',
     ],
-    msgListt5: 'Piura, Piura',
-    textListt5: 'Aniversario de Piura',
-    mesListt5: 'Agosto',
+    msgListt5amazo: 'Piura, Piura',
+    textListt5amazo: 'Aniversario de Piura',
+    mesListt5amazo: 'Agosto',
   ),
 ];
 
 //EVENT 07
-class EventModelsssssss {
-  final List<String> fileNme6;
-  final String msgListt6;
-  final String textListt6;
-  final String mesListt6;
+class EventModelsssssss9 {
+  final List<String> fileNme6amazo;
+  final String msgListt6amazo;
+  final String textListt6amazo;
+  final String mesListt6amazo;
 
-  EventModelsssssss({
-    required this.fileNme6,
-    required this.msgListt6,
-    required this.textListt6,
-    required this.mesListt6,
+  EventModelsssssss9({
+    required this.fileNme6amazo,
+    required this.msgListt6amazo,
+    required this.textListt6amazo,
+    required this.mesListt6amazo,
   });
 }
 
-List<dynamic> eventlistt6 = [
-  EventModelsssssss(
-    fileNme6: [
+List<dynamic> eventlistt6amazo = [
+  EventModelsssssss9(
+    fileNme6amazo: [
       'assets/santa1.jpg',
       'assets/santa2.jpg',
       'assets/santa3.jpg',
@@ -216,8 +216,8 @@ List<dynamic> eventlistt6 = [
       'assets/santa6.jpg',
       'assets/santa7.jpg',
     ],
-    msgListt6: 'Piura, Huancabamba',
-    textListt6: 'Semana Santa',
-    mesListt6: 'Abril',
+    msgListt6amazo: 'Piura, Huancabamba',
+    textListt6amazo: 'Semana Santa',
+    mesListt6amazo: 'Abril',
   )
 ];

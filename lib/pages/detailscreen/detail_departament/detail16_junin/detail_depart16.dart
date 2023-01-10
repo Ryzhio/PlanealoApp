@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/models/event_model/event16_junin/event_models16.dart';
 import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
@@ -131,7 +132,7 @@ class _DetailDepart16State extends State<DetailDepart16> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventJunin1(eventModels: eventlistt.first),
+                              EventJunin1(eventModels16: eventlisttjunin.first),
                             ],
                           ),
                         ),
@@ -140,7 +141,8 @@ class _DetailDepart16State extends State<DetailDepart16> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventJunin2(eventModelss: eventlistt1.first),
+                              EventJunin2(
+                                  eventModelss16: eventlistt1junin.first),
                             ],
                           ),
                         ),
@@ -149,7 +151,8 @@ class _DetailDepart16State extends State<DetailDepart16> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventJunin3(eventModelsss: eventlistt2.first),
+                              EventJunin3(
+                                  eventModelsss16: eventlistt2junin.first),
                             ],
                           ),
                         ),
@@ -158,7 +161,8 @@ class _DetailDepart16State extends State<DetailDepart16> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventJunin4(eventModelssss: eventlistt3.first),
+                              EventJunin4(
+                                  eventModelssss16: eventlistt3junin.first),
                             ],
                           ),
                         ),
@@ -167,7 +171,8 @@ class _DetailDepart16State extends State<DetailDepart16> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventJunin5(eventModelsssss: eventlistt4.first),
+                              EventJunin5(
+                                  eventModelsssss16: eventlistt4junin.first),
                             ],
                           ),
                         ),
@@ -176,7 +181,8 @@ class _DetailDepart16State extends State<DetailDepart16> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventJunin6(eventModelssssss: eventlistt5.first),
+                              EventJunin6(
+                                  eventModelssssss16: eventlistt5junin.first),
                             ],
                           ),
                         ),
@@ -185,7 +191,8 @@ class _DetailDepart16State extends State<DetailDepart16> {
                           padding: const EdgeInsets.only(left: 10, right: 10),
                           child: Row(
                             children: [
-                              EventJunin7(eventModelsssssss: eventlistt6.first),
+                              EventJunin7(
+                                  eventModelsssssss16: eventlistt6junin.first),
                             ],
                           ),
                         ),
