@@ -16,16 +16,16 @@ class EventModels2 {
 List<dynamic> eventlisttlam = [
   EventModels2(
     fileNmelam: [
-      'assets/carna3.jpg',
-      'assets/carna6.jpg',
-      'assets/carna2.jpg',
-      'assets/carna5.jpg',
-      'assets/carna4.jpg',
-      'assets/carna1.jpg',
-      'assets/carna7.jpg',
+      'assets/divi1.jpg',
+      'assets/divi2.jpg',
+      'assets/divi3.jpg',
+      'assets/divi4.jpg',
+      'assets/divi5.jpg',
+      'assets/divi6.jpg',
+      'assets/divi7.jpg',
     ],
-    msgListtlam: 'Piura, Catacaos',
-    textListtlam: 'Carnavales',
+    msgListtlam: 'Lambayeque, Etén',
+    textListtlam: 'Divnino niño del Milagro',
     mesListtlam: 'Enero',
   ),
 ];
@@ -48,17 +48,17 @@ class EventModelss2 {
 List<dynamic> eventlistt1lam = [
   EventModelss2(
     fileNme1lam: [
-      'assets/tala1.jpg',
-      'assets/tala2.jpg',
-      'assets/tala3.jpg',
-      'assets/tala4.jpg',
-      'assets/tala5.jpg',
-      'assets/tala6.jpg',
-      'assets/tala7.jpg',
+      'assets/arroz1.jpg',
+      'assets/arroz2.jpg',
+      'assets/arroz3.jpg',
+      'assets/arroz4.jpg',
+      'assets/arroz5.jpg',
+      'assets/arroz6.jpg',
+      'assets/arroz7.jpg',
     ],
-    msgListt1lam: 'Piura',
-    textListt1lam: 'Semana de Talara y Feria',
-    mesListt1lam: 'Marzo',
+    msgListt1lam: 'Lambayeque, Chiclayo',
+    textListt1lam: 'Festival del Arroz',
+    mesListt1lam: 'Febrero',
   ),
 ];
 
@@ -80,17 +80,17 @@ class EventModelsss2 {
 List<dynamic> eventlistt2lam = [
   EventModelsss2(
     fileNme2lam: [
-      'assets/yun7.jpg',
-      'assets/yun5.jpg',
-      'assets/yun2.jpg',
-      'assets/yun3.jpg',
-      'assets/yun1.jpg',
-      'assets/yun6.jpg',
-      'assets/yun4.jpg',
+      'assets/monse1.jpg',
+      'assets/monse2.jpg',
+      'assets/monse3.jpg',
+      'assets/monse4.jpg',
+      'assets/monse5.jpg',
+      'assets/monse6.jpg',
+      'assets/monse7.jpg',
     ],
-    msgListt2lam: 'Piura, Catacaos',
-    textListt2lam: 'Yunzas',
-    mesListt2lam: 'Enero',
+    msgListt2lam: 'Lambayeque, Monsefú',
+    textListt2lam: 'Fiesta del Señor Cautivo',
+    mesListt2lam: 'Marzo',
   ),
 ];
 
@@ -112,17 +112,17 @@ class EventModelssss2 {
 List<dynamic> eventlistt3lam = [
   EventModelssss2(
     fileNme3lam: [
-      'assets/cauti1.jpg',
-      'assets/cauti2.jpg',
-      'assets/cauti3.jpg',
-      'assets/cauti7.jpg',
-      'assets/cauti4.jpg',
-      'assets/cauti5.jpg',
-      'assets/cauti6.jpg',
+      'assets/anichi1.jpg',
+      'assets/anichi2.jpg',
+      'assets/anichi3.jpg',
+      'assets/anichi4.jpg',
+      'assets/anichi5.jpg',
+      'assets/anichi6.jpg',
+      'assets/anichi7.jpg',
     ],
-    msgListt3lam: 'Piura, Ayabaca',
-    textListt3lam: 'Señor Cautivo de Ayabaca',
-    mesListt3lam: 'Noviembre',
+    msgListt3lam: 'Lambayeque, Chiclayo',
+    textListt3lam: 'Fundacion de Chiclayo',
+    mesListt3lam: 'Abril',
   ),
 ];
 
@@ -144,17 +144,17 @@ class EventModelsssss2 {
 List<dynamic> eventlistt4lam = [
   EventModelsssss2(
     fileNme4lam: [
-      'assets/merce1.jpg',
-      'assets/merce2.jpg',
-      'assets/merce3.jpg',
-      'assets/merce4.jpg',
-      'assets/merce5.jpg',
-      'assets/merce6.jpg',
-      'assets/merce7.jpg',
+      'assets/justi3.jpg',
+      'assets/justi2.jpg',
+      'assets/justi1.jpg',
+      'assets/justi4.jpg',
+      'assets/justi5.jpg',
+      'assets/justi6.jpg',
+      'assets/justi7.jpg',
     ],
-    msgListt4lam: 'Piura, Paita',
-    textListt4lam: 'Virgen de las Mercedes',
-    mesListt4lam: 'Setiembre',
+    msgListt4lam: 'Lambayeque, Ferreñafe',
+    textListt4lam: 'Festividad Señor de la Justicia',
+    mesListt4lam: 'Octubre',
   ),
 ];
 
@@ -176,17 +176,17 @@ class EventModelssssss2 {
 List<dynamic> eventlistt5lam = [
   EventModelssssss2(
     fileNme5lam: [
-      'assets/anip1.jpg',
-      'assets/anip2.jpg',
-      'assets/anip3.jpg',
-      'assets/anip4.jpg',
-      'assets/anip5.jpg',
-      'assets/anip6.jpg',
-      'assets/anip7.jpg',
+      'assets/saña1.jpg',
+      'assets/saña2.jpg',
+      'assets/saña3.jpg',
+      'assets/saña4.jpg',
+      'assets/saña5.jpg',
+      'assets/saña6.jpg',
+      'assets/saña7.jpg',
     ],
-    msgListt5lam: 'Piura, Piura',
-    textListt5lam: 'Aniversario de Piura',
-    mesListt5lam: 'Agosto',
+    msgListt5lam: 'Lambayeque, Saña',
+    textListt5lam: 'Fundación Española de Saña',
+    mesListt5lam: 'Noviembre',
   ),
 ];
 
@@ -208,16 +208,16 @@ class EventModelsssssss2 {
 List<dynamic> eventlistt6lam = [
   EventModelsssssss2(
     fileNme6lam: [
-      'assets/santa1.jpg',
-      'assets/santa2.jpg',
-      'assets/santa3.jpg',
-      'assets/santa4.jpg',
-      'assets/santa5.jpg',
-      'assets/santa6.jpg',
-      'assets/santa7.jpg',
+      'assets/concep1.jpg',
+      'assets/concep2.jpg',
+      'assets/concep3.jpg',
+      'assets/concep4.jpg',
+      'assets/concep5.jpg',
+      'assets/concep6.jpg',
+      'assets/concep7.jpg',
     ],
-    msgListt6lam: 'Piura, Huancabamba',
-    textListt6lam: 'Semana Santa',
-    mesListt6lam: 'Abril',
+    msgListt6lam: 'Lambayeque, Chiclayo',
+    textListt6lam: 'Inmaculada Concepción',
+    mesListt6lam: 'Diciembre',
   )
 ];
