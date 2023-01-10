@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:planealo_app/models/event_model/event1_piura_models/event_models.dart';
 import 'package:planealo_app/models/event_model/event2_lambayeque/event_models2.dart';
-import 'package:planealo_app/widgets/carousel_wigget/carousel1_piura/carrousel_screen_event2.dart';
+import 'package:planealo_app/widgets/carousel_wigget/carousel2_lambayeque/carrousel_screen_event_lamb2.dart';
 
 class EventLamba2 extends StatefulWidget {
   final EventModelss2 eventModelss2;
@@ -34,8 +33,8 @@ class _EventLamba2State extends State<EventLamba2> {
               children: [
                 //CARRUSEL DE IMAGENES
                 SizedBox(
-                  child: CarrouselScreenEvent2(
-                    eventModelss: eventlistt1.first,
+                  child: CarrouselScreenEventLamb2(
+                    eventModelss2: eventlistt1lam.first,
                   ),
                 ),
                 const SizedBox(
