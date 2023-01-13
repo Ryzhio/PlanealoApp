@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:planealo_app/main.dart';
+import 'package:planealo_app/routes/route.dart';
 import 'package:provider/provider.dart';
 import 'package:planealo_app/models/users.dart';
 import 'package:planealo_app/pages/perfilscreen/configurate.dart';
@@ -117,30 +119,33 @@ class ProfileCard extends StatelessWidget {
                       ),
                     ),
                     MaterialButton(
-                      minWidth: 160,
-                      height: 56,
-                      color: Colors.amber,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const InicioPage(),
-                          ),
-                        );
-                      },
-                      child: const Text(
-                        'Ajustes',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          // fontWeight: FontWeight.bold,
-                          // letterSpacing: 1,
+                        minWidth: 60,
+                        height: 56,
+                        color: Colors.amber,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(40),
                         ),
-                      ),
-                    ),
+                        onPressed: () {
+                          Navigator.pushReplacementNamed(
+                              context, MyRoutes.rWELCOME);
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => const InicioPage(),
+                          //   ),
+                          // );
+                        },
+                        child: const Icon(Icons.power_settings_new_outlined)
+                        // Text(
+                        //   'Ajustes',
+                        //   style: TextStyle(
+                        //     color: Colors.white,
+                        //     fontSize: 20,
+                        // fontWeight: FontWeight.bold,
+                        // letterSpacing: 1,
+                        ),
+                    //   ),
+                    // ),
                     // CustomElevatedButton(
                     //   text: 'Ajustes',
 
@@ -168,23 +173,23 @@ class ProfileCard extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
+                    // Padding(
+                    //   padding: const EdgeInsets.all(8.0),
+                    //   child: FloatingActionButton(
+                    //     onPressed: () {
+                    //       // launchcherProvider.goMapLauncher();
+                    //     },
+                    //     backgroundColor: Colors.red,
+                    //     child: const Icon(
+                    //       Icons.power_settings_new,
+                    //     ),
+                    //   ),
+                    // ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: FloatingActionButton(
                         onPressed: () {
-                          // launchcherProvider.goMapLauncher();
-                        },
-                        backgroundColor: Colors.red,
-                        child: const Icon(
-                          Icons.power_settings_new,
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: FloatingActionButton(
-                        onPressed: () {
-                          // launchcherProvider.goEmailLauncher();
+                          launcherProvider.goEmailLauncher();
                         },
                         backgroundColor: Colors.green,
                         child: const Icon(

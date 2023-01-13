@@ -25,9 +25,9 @@ class LauncherProvider extends ChangeNotifier {
 
   //EMAIL
   void goEmailLauncher() async {
-    String email = 'flutter@gmail.com';
-    String asunto = 'DEMO Developer';
-    String msg = 'Estamos probando el correo desde Flutter';
+    String email = 'planealo.teems@gmail.com';
+    String asunto = 'Developer Planealo';
+    String msg = '';
 
     String urlEncode =
         Uri.encodeFull('mailto: $email?subject=$asunto&body=$msg');
@@ -41,7 +41,7 @@ class LauncherProvider extends ChangeNotifier {
 
   //BROWSER
   void goBrowserLauncher() async {
-    String url = 'https://youtu.be/VuNIsY6JdUw';
+    String url = 'https://youtu.be/m1u-QGwdOGE';
     String urlEncode = Uri.encodeFull(url);
     if (await canLaunchUrlString(urlEncode)) {
       await launchUrlString(
@@ -64,10 +64,11 @@ class LauncherProvider extends ChangeNotifier {
   //WHATSAPP
 
   void goWhatsappLauncher() async {
-    String phone = '+5195999999';
-    String msg = 'Feliz Navidad!';
-    String urlEncode = Uri.encodeFull('https://wa.me/$phone?text=$msg');
-    if (await launchUrlString(urlEncode)) {
+    String phone = 'https://www.instagram.com/plan.ealo/';
+    // String msg = 'Feliz Navidad!';
+    String urlEncode = Uri.encodeFull(//'https://wa.me/$phone?text=$msg'
+        phone);
+    if (await canLaunchUrlString(urlEncode)) {
       await launchUrlString(
         urlEncode,
         mode: LaunchMode.externalApplication,

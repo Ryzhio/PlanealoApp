@@ -190,7 +190,7 @@ class __LoginFormState extends State<_LoginForm> {
                   ),
                   SizedBox(
                     height: 50,
-                    width: 50,
+                    width: 80,
                     child: MaterialButton(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),

@@ -72,7 +72,7 @@ class _DetailDepartState extends State<DetailDepart> {
                 const SizedBox(
                   height: 10,
                 ),
-                SizedBox(
+                Container(
                   height: 630,
                   child: ListView.builder(
                     itemCount: placesp.length,

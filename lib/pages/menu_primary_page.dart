@@ -4,6 +4,7 @@ import 'package:ionicons/ionicons.dart';
 import 'package:planealo_app/models/users.dart';
 import 'package:planealo_app/pages/perfilscreen/profile_screen.dart';
 import 'package:planealo_app/pages/producto/principal_page.dart';
+import 'package:planealo_app/pages/reservation_favorite/reservation_favorite.dart';
 
 class MenuPrimaryPage extends StatefulWidget {
   const MenuPrimaryPage({super.key});
@@ -17,13 +18,13 @@ class _MenuPrimaryPageState extends State<MenuPrimaryPage> {
 
   final screens = [
     PrincipalPage(user: userd.first),
-    // const Center(child: Text('Lista', style: TextStyle(fontSize: 45))),
     // const Center(child: Text('Buscador', style: TextStyle(fontSize: 45))),
+    const ReservationFavorite(),
     const ProfileScreen(),
   ];
   final colors = [
     Colors.orange,
-    // Colors.purple,
+    Colors.orange,
     Colors.orange,
     // Colors.green,
   ];
@@ -49,12 +50,12 @@ class _MenuPrimaryPageState extends State<MenuPrimaryPage> {
               iconActiveColor: Colors.white,
               textColor: Colors.white,
             ),
-            // GButton(
-            //   icon: Ionicons.book_sharp,
-            //   text: '    Notas',
-            //   iconActiveColor: Colors.white,
-            //   textColor: Colors.white,
-            // ),
+            GButton(
+              icon: Ionicons.book_sharp,
+              text: '    Favoritos',
+              iconActiveColor: Colors.white,
+              textColor: Colors.white,
+            ),
             // GButton(
             //   icon: Ionicons.search_sharp,
             //   text: '    Search',

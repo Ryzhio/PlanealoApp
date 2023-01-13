@@ -37,44 +37,51 @@ class _CustomCardState extends State<CustomCard> {
           children: [
             Stack(
               children: [
-                ClipRRect(
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                  ),
-                  child: Image.asset(
-                    widget.user.perfilL,
-                    fit: BoxFit.cover,
-                  ),
-                ),
+                (widget.user.perfilL != '')
+                    ? ClipRRect(
+                        borderRadius: const BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
+                        child: Image.asset(
+                          widget.user.perfilL,
+                          fit: BoxFit.cover,
+                        ),
+                      )
+                    : const ClipRRect(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
+                        child: SizedBox(
+                          width: 300,
+                          height: 200,
+                          child: Center(
+                            child: Icon(Icons.photo_size_select_large_outlined),
+                          ),
+                        ),
+                      ),
                 Positioned(
                   top: 10,
                   right: 10,
                   child: Container(
-                    width: 60,
-                    height: 30,
+                    width: 48,
+                    height: 45,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.white,
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0),
-                      child: Row(
-                        children: [
-                          const Icon(
-                            Icons.star,
-                            color: Colors.yellow,
-                            size: 20,
-                          ),
-                          Text(
-                            '4.2',
-                            style: GoogleFonts.josefinSans(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
+                    child: Row(
+                      // ignore: prefer_const_literals_to_create_immutables
+                      children: [
+                        IconButton(
+                            onPressed: () {},
+                            icon: const Icon(
+                              Icons.favorite,
+                              color: Colors.red,
+                              size: 30,
+                            )),
+                      ],
                     ),
                   ),
                 )
@@ -89,11 +96,14 @@ class _CustomCardState extends State<CustomCard> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Laguna de la Huacachina',
+                        widget.user.perfilD,
                         style: GoogleFonts.josefinSans(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                         ),
+                      ),
+                      const SizedBox(
+                        width: 40,
                       ),
                       Container(
                         width: 65,
@@ -110,7 +120,7 @@ class _CustomCardState extends State<CustomCard> {
                         ),
                         child: Center(
                           child: Text(
-                            'Ica',
+                            widget.user.perfilZ,
                             style: GoogleFonts.josefinSans(
                               fontSize: 15,
                               fontWeight: FontWeight.bold,
@@ -140,9 +150,9 @@ class _CustomCardState extends State<CustomCard> {
                                       color: Colors.white,
                                       width: 3,
                                     ),
-                                    image: DecorationImage(
-                                      image: AssetImage(widget.user.perfilA),
-                                    ),
+                                    // image: DecorationImage(
+                                    //   image: AssetImage(widget.user.perfilA),
+                                    // ),
                                   ),
                                 ),
                               ),
@@ -150,18 +160,18 @@ class _CustomCardState extends State<CustomCard> {
                           },
                         ),
                       ),
-                      const Icon(Icons.more_vert),
+                      // const Icon(Icons.more_vert),
                     ],
                   ),
-                  const SizedBox(height: 10),
-                  Text(
-                    'Un muy Hermoso Lugar <3',
-                    style: GoogleFonts.josefinSans(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black38,
-                    ),
-                  ),
+                  // const SizedBox(height: 10),
+                  // Text(
+                  //   'Un muy Hermoso Lugar <3',
+                  //   style: GoogleFonts.josefinSans(
+                  //     fontSize: 16,
+                  //     fontWeight: FontWeight.bold,
+                  //     color: Colors.black38,
+                  //   ),
+                  // ),
                 ],
               ),
             )

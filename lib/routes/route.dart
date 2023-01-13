@@ -6,9 +6,12 @@ class MyRoutes {
   static const String rLOGIN = '/login';
   static const String rREGISTER = '/register';
   static const String rVerify = '/verify';
+  static const String rWELCOME = '/bienvenida_page';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
+      case ('/bienvenida_page'):
+        return MaterialPageRoute(builder: (_) => const BienvenidaPage());
       case ('/inicio'):
         return MaterialPageRoute(builder: (_) => const MenuPrimaryPage());
       case ('/login'):

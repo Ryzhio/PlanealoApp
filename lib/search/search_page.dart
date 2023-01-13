@@ -3,16 +3,9 @@ import 'package:planealo_app/models/placepri_model.dart';
 import 'package:planealo_app/models/search_model.dart';
 import 'package:planealo_app/pages/departments/departments_page.dart';
 import 'package:planealo_app/pages/detailscreen/detail_screen.dart';
+import 'package:planealo_app/pages/producto/list_departament2.dart';
 
 class Search extends SearchDelegate {
-  List<dynamic> recentSearch = [
-    'Cuzco',
-    'Piura',
-    'Lima',
-    'Ica',
-    'Loreto',
-  ];
-
   @override
   List<Widget>? buildActions(BuildContext context) {
     return [
@@ -33,58 +26,80 @@ class Search extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    return ListView.builder(
-      padding: const EdgeInsets.only(left: 15, right: 15),
-      itemCount: depart.length,
-      scrollDirection: Axis.vertical,
-      itemBuilder: (context, index) {
-        return Row(
-          children: [
-            DepartmentsPage(
-              searchModel: depart[index],
-              press: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DetailScreen(
-                      placeInfo: placesp[index],
-                    ),
-                  ),
-                );
-              },
-            )
-          ],
-        );
-      },
+    return ListView(
+      // itemCount: depart.length,
+      children: [
+        //LISTA DE DEPARTAMENTOS
+        const ListDepartament2(),
+      ],
+      scrollDirection: Axis.horizontal,
+      // itemBuilder: (context, index) {
+      // return
+      // },
     );
+    // ListView.builder(
+    //   padding: const EdgeInsets.only(left: 15, right: 15),
+    //   itemCount: depart.length,
+    //   scrollDirection: Axis.vertical,
+    //   itemBuilder: (context, index) {
+    //     return Row(
+    //       children: [
+    //         DepartmentsPage(
+    //           searchModel: depart[index],
+    //           press: () {
+    //             Navigator.push(
+    //               context,
+    //               MaterialPageRoute(
+    //                 builder: (context) => DetailScreen(
+    //                   placeInfo: placesp[index],
+    //                 ),
+    //               ),
+    //             );
+    //           },
+    //         )
+    //       ],
+    //     );
+    //   },
+    // );
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    return ListView.builder(
-      padding: const EdgeInsets.only(left: 15, right: 15),
-      itemCount: depart.length,
-      scrollDirection: Axis.vertical,
-      itemBuilder: (context, index) {
-        return Row(
-          children: [
-            DepartmentsPage(
-              searchModel: depart[index],
-              press: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DetailScreen(
-                      placeInfo: placesp[index],
-                    ),
-                  ),
-                );
-              },
-            ),
-          ],
-        );
-      },
+    return ListView(
+      // itemCount: depart.length,
+      children: [
+        //LISTA DE DEPARTAMENTOS
+        const ListDepartament2(),
+      ],
+      scrollDirection: Axis.horizontal,
+      // itemBuilder: (context, index) {
+      // return
+      // },
     );
+    // ListView.builder(
+    //   padding: const EdgeInsets.only(left: 15, right: 15),
+    //   itemCount: depart.length,
+    //   scrollDirection: Axis.vertical,
+    //   itemBuilder: (context, index) {
+    //     return Row(
+    //       children: [
+    //         DepartmentsPage(
+    //           searchModel: depart[index],
+    //           press: () {
+    //             Navigator.push(
+    //               context,
+    //               MaterialPageRoute(
+    //                 builder: (context) => DetailScreen(
+    //                   placeInfo: placesp[index],
+    //                 ),
+    //               ),
+    //             );
+    //           },
+    //         ),
+    //       ],
+    //     );
+    //   },
+    // );
     // return ListView.builder(
     //   itemCount: recentSearch.length,
     //   itemBuilder: (context, index) {
